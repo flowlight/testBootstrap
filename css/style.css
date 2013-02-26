@@ -124,6 +124,7 @@ padding: 10px 0px 60px 0px;
 }
 #footer .info .touch{
   float: right;
+  text-align: right;
 }
 #footer .info .touch ul li{
   display: inline-block;
@@ -248,7 +249,7 @@ padding: 10px 0px 60px 0px;
 }
 .navbar.navbar-inverse .navbar-inner.sticky {
     background: rgba(0,0,0,0.8);
-    border-bottom: 1px solid #252525;
+    border-bottom: 1px solid #AEBA67;
 }
 .navbar-inverse .navbar-inner.sticky .container {
     margin-top: 0px !important;
@@ -279,63 +280,145 @@ padding: 10px 0px 60px 0px;
 	background: #252528;
 }
 .navbar-inverse .nav > li > .dropdown-menu::after {
-	border-bottom: 6px solid #252528;
+	/*border-bottom: 6px solid #252528;*/
+	border-bottom: 6px solid #AEBA67;
 }
 .navbar-inverse .dropdown-menu li > a {
 	color: #fff;
 }
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a.active {
+	background: #AEBA67;
+}
+
 /* Responsive
 -------------------------------------------------- */
 
 /* Large desktop */
 @media (min-width: 1200px) {
-
+	#footer .sections .contact > *{
+		/*margin-left: 80px;*/
+	}
 }
 @media (min-width: 980px) {
-  
+	
 }
 @media (max-width: 979px) {
-
+	.navbar.transparent.navbar-fixed-top, 
+	.navbar.home.navbar-fixed-top{
+		margin-bottom: 0px;
+	}
+	.navbar.transparent.navbar-inverse .navbar-inner {
+		background: #252528;
+	}
+	.navbar-inverse .nav-collapse .nav > li > a, 
+	.navbar-inverse .nav-collapse .dropdown-menu a {
+		color: #fff;
+		opacity: 0.7;
+	}
 }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) { 
-
+	.navbar.transparent.navbar-fixed-top, 
+	.navbar.home.navbar-fixed-top{
+		margin-bottom: -70px;
+		position: relative;
+		top: 999;
+	}
+	#message {
+		margin-left: 20px;
+	}
 }
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) { 
-  #contact .contact .submit .box{
-    margin: 10px 0 24px;
-  }
-  #contact .form .box input[type="text"]{
-    width: 87%;
-  }
-  #contact .contact .submit .right input[type="submit"]{
-    margin: 0 auto;
-    float: none;
-    width: 53%;
-    display: block;
-    padding: 7px;
-  }
-  #contact .map .box_wrapp{
-    width: 90%;
-    position: relative;
-    margin: 0 auto 80px;  
-  }
-  #contact .map .box_wrapp .box_cont{
-  }
-  #contact .map iframe{
-    display: none;
-  }
-  #contact .map .box_wrapp a.btn{
-    width: 65%;
-  }
+@media (max-width: 767px) {
+	footer {
+		margin-right: -20px;
+		margin-left: -20px;
+		text-align: center;
+	}
+	#footer{
+		margin-right: -20px;
+		margin-left: -20px;
+		text-align: center;
+	}
+	#footer .container{
+		padding: 0px 20px;
+	}
+	/*Index Footer*/
+	#footer .footer_header {
+		margin-left: 0;
+	}
+	#footer .footer_header h3{
+		margin-left: 0;
+	}
+	#footer .testimonials{
+		overflow: hidden;
+		margin-bottom: 40px;
+	}
+	#footer .testimonials .footer_header{
+		margin-left: 0;
+	}
+	#footer .testimonials .wrapper{
+		float: left;
+		width: 100%;
+	}
+	#footer .contact{
+		margin: 0;
+	}
+	#footer .contact .footer_header{
+		margin-left: 0;
+	}
+	#footer .contact input[type="text"], #footer .contact textarea{
+		float: left;
+		width: 92%;
+	}
+	/*Inner Footer*/
+	#footer .info .touch {
+		float: right;
+		text-align: center;
+	}
+	#footer .info .touch ul li{
+		margin: 0 30px 0 0;
+	}
+	#footer .info .touch ul{
+		margin:15px 0 15px;
+	}
+	.hero-unit {
+		padding: 10px;
+	}
+		#contact .contact .submit .box{
+		margin: 10px 0 24px;
+	}
+	#contact .form .box input[type="text"]{
+		width: 87%;
+	}
+	#contact .contact .submit .right input[type="submit"]{
+		margin: 0 auto;
+		float: none;
+		width: 53%;
+		display: block;
+		padding: 7px;
+	}
+	#contact .map .box_wrapp{
+		width: 90%;
+		position: relative;
+		margin: 0 auto 80px;	
+	}
+	#contact .map .box_wrapp .box_cont{
+	}
+	#contact .map iframe{
+		display: none;
+	}
+	#contact .map .box_wrapp a.btn{
+		width: 65%;
+	}
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  #contact .contact .submit .right input[type="submit"]{
-    width: 60%;   
-  }
-  #contact .map .box_wrapp{
-    width: 100%;  
-  }
+	#contact .contact .submit .right input[type="submit"]{
+		width: 60%;		
+	}
+	#contact .map .box_wrapp{
+		width: 100%;	
+	}
 }

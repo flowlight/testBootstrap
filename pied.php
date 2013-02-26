@@ -9,11 +9,11 @@
             </div>
             <div class="span4 text-center">
                 <ul>
-                    <li><a href="sitemap.html" style="color:#AEBA67;">Sitemap</a></li>
-                    <li><a href="#conditions" role="button" data-toggle="modal" style="color:#AEBA67;">Condition Générale</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#conditions" role="button" data-toggle="modal">Condition Générale</a></li>
                 </ul> 
             </div>
-            <div class="span4 touch text-right">
+            <div class="span4 touch">
                 <ul>
                     <li><strong>T.</strong> +33 (0)1 3968 1427</li>
                     <li><strong>E.</strong><a href="mailto:contact@cotejardin-citybreak.fr"> contact@cotejardin-citybreak.fr</a></li>

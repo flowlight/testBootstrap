@@ -23,3 +23,6 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
 </head>
+
+  <!-- MENU -->
+  <?php include 'menu.php';?>

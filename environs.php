@@ -6,55 +6,9 @@
   
   <!-- BODY -->
   <body>
-    <div class="container">
-      <div class="page-header" style="margin-bottom:0px;padding-bottom:0px;">
-        <h3 style="color:#AEBA67;">Côté Jardin <small>City Break</small></h3>
-      </div>
-
-      <div class="row-fluid">
-        
-        <div class="span10">
-          <!-- Menu -->
-          <div class="navbar" style="margin-top:10px;">
-            <div class="navbar-inner">
-              <div class="container">
-                <ul class="nav">
-                  <li><a href="index.php">Bienvenue</a></li>
-                  <li><a href="chambre.php">Chambre</a></li>
-                  <li><a href="tarif.php">Tarifs</a></li>
-                  <li><a href="galerie.php">Galerie</a></li>
-                  <li class="active"><a href="#">Dans les environs</a></li>
-                  <li><a href="localisation.php">Localisation</a></li>
-                  <li><a href="contact.php">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-          </div><!-- Menu -->
-        </div>
-
-        <div class="span2">
-          <!--Sidebar content-->
-          <div class="navbar" style="margin-top:10px;">
-            <div class="navbar-inner">
-              <div class="container">
-                <ul class="nav">
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      <small>Langue</small>
-                      <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li class="active"><a href="#">French</a></li>
-                      <li><a href="#">English</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div><!-- row -->
-    </div><!-- container -->
+    <?php 
+	    menu("environs");
+    ?>
     
     <div class="container">
       <div class="row-fluid">  
