@@ -6,14 +6,62 @@
   
   <!-- BODY -->
   <body>
+        
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="index.php">
+                <strong style="color:#AEBA67;">Côté Jardin</strong> <small>City Break</small>
+            </a>
+            <div class="nav-collapse collapse">
+                <ul class="nav pull-right">
+                    <li><a href="index.php" class="active">BIENVENUE</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            CITY BREAK
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="chambre.php">CHAMBRE</a></li>
+                            <li><a href="galerie.php">GALERIE</a></li>
+                            <li><a href="tarif.php">TARIFS</a></li>
+                        </ul>
+                    </li> 
+                    <li><a href="environs.php">ENVIRONS</a></li>
+                    <li><a href="localisation.php">LOCALISATION</a></li>
+                    <li><a href="contact.php">CONTACT</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            LANGUE
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.php">Français</a></li>
+                            <li><a href="index.php">English</a></li>
+                        </ul>
+                    </li>               
+                    <!--<li><a class="btn-header" href="sign-up.html">Sign up</a></li>
+                    <li><a class="btn-header" href="sign-in.html">Sign in</a></li>-->
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
+
+    <!--
       <div class="page-header" style="margin-bottom:0px;padding-bottom:0px;">
         <h3 style="color:#AEBA67;">Côté Jardin <small>City Break</small></h3>
       </div>
 
       <div class="row-fluid">
         <div class="span10">
-          <!--Body content-->
           <div class="navbar" style="margin-top:10px;">
             <div class="navbar-inner">
               <div class="container">
@@ -23,12 +71,12 @@
                   <li><a href="tarif.php">Tarifs</a></li>
                   <li><a href="galerie.php">Galerie</a></li>
                   <li><a href="environs.php">Dans les environs</a></li>
-                  <li><a href="localisation.php#">Localisation</a></li>
+                  <li><a href="localisation.php">Localisation</a></li>
                   <li><a href="contact.php">Contact</a></li>
                 </ul>
               </div>
             </div>
-          </div>
+          </div>-->
           <div id="myCarousel" class="carousel slide">
             <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -75,8 +123,8 @@
             </blockquote>
           </div>
         </div>
+        <!--
         <div class="span2">
-          <!--Sidebar content-->
           <div class="navbar" style="margin-top:10px;">
             <div class="navbar-inner">
               <div class="container">
@@ -109,7 +157,7 @@
             <strong>A partir de 70€ la nuité</strong><br>
             <p class="text-center"><button class="btn btn-primary" type="button"><i class="icon-search icon-white"></i> Réserver</button></p>
           </p>
-        </div>
+        </div>-->
       </div>
     </div>
 
