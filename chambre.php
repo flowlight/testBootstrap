@@ -1,5 +1,10 @@
+<?php
+define("WEBROOT","/.");
+require "localization.php"; 
+?>
+
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 
   <!-- HEAD -->
   <?php include 'head.php';?>
@@ -26,15 +31,24 @@
       <div class="hero-unit" style="padding:10px;margin:0px;">
         <blockquote style="padding:10px;margin:0px;">
             <ul class="unstyled">
-              <li><img src="icon/hotel.png" width=40px> L’hébergement offre une chambre de 16 m² située au premier étage de notre pavillon.</li>
-              <li><img src="icon/stairs.png" width=40px> Elle est desservie par un escalier privatif et indépendant des autres accès de la maison.</li>
-              <li><img src="icon/parking.png" width=40px> Parking dans la propriété.</li>
-              <li><img src="icon/nature.png" width=40px> La chambre dispose d’un balcon avec salon de jardin, qui donne sur le jardin paysagé à l’arrière de la maison.</li>
-              <li><img src="icon/hanger.png" width=40px> Elle comprend deux lits jumeaux de 2 m x 0.90 m (ou 2 m x 1,80 m), une penderie et une bibliothèque.</li>
-              <li><img src="icon/tv.png" width=40px> La chambre comporte également deux fauteuils, un petit bureau, une télévision satellite.</li>
-              <li><img src="icon/wireless.png" width=40px> Une liaison Internet WIFI ou ethernet est à votre disposition</li>
-              <li><img src="icon/drink.png" width=40px> La salle de douche privative est attenante à la chambre avec douche à l’italienne, toilettes, lavabo.</li>
-              <li><img src="icon/cafe.png" width=40px> Le petit déjeuner est servi dans la véranda ou dans le séjour/salle à manger de la maison.</li>
+              <li><img src="icon/hotel.png" width=40px>
+              	<?php echo _(" L’hébergement offre une chambre de 16 m² située au premier étage de notre pavillon."); ?></li>
+              <li><img src="icon/stairs.png" width=40px>
+               	<?php echo _(" Elle est desservie par un escalier privatif et indépendant des autres accès de la maison."); ?></li>
+              <li><img src="icon/parking.png" width=40px>
+              	<?php echo _(" Parking dans la propriété."); ?></li>
+              <li><img src="icon/nature.png" width=40px>
+              	<?php echo _(" La chambre dispose d’un balcon avec salon de jardin, qui donne sur le jardin paysagé à l’arrière de la maison."); ?></li>
+              <li><img src="icon/hanger.png" width=40px>
+              	<?php echo _(" Elle comprend deux lits jumeaux de 2 m x 0.90 m (ou 2 m x 1,80 m), une penderie et une bibliothèque."); ?></li>
+              <li><img src="icon/tv.png" width=40px>
+              	<?php echo _(" La chambre comporte également deux fauteuils, un petit bureau, une télévision satellite."); ?></li>
+              <li><img src="icon/wireless.png" width=40px>
+              	<?php echo _(" Une liaison Internet WIFI ou ethernet est à votre disposition"); ?></li>
+              <li><img src="icon/drink.png" width=40px>
+              	<?php echo _(" La salle de douche privative est attenante à la chambre avec douche à l’italienne, toilettes, lavabo."); ?></li>
+              <li><img src="icon/cafe.png" width=40px>
+              	<?php echo _(" Le petit déjeuner est servi dans la véranda ou dans le séjour/salle à manger de la maison."); ?></li>
         </blockquote>
       </div>
       <br>
