@@ -1,0 +1,257 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Côté Jardin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-10 16:03+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Grafikart <contact@grafikart.fr>\n"
+"Language-Team: Xavier VASSEUR <ma.x@free.fr>\n"
+"Language: franàais\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;ngettext:1,2\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2;plural=n>1;\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: /Users/flowlight/Documents/cotejardin/testBootstrap\n"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/chambre.php:35
+msgid ""
+" L’hébergement offre une chambre de 16 m² située au premier étage de notre "
+"pavillon."
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/chambre.php:37
+msgid ""
+" Elle est desservie par un escalier privatif et indépendant des autres accès "
+"de la maison."
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/chambre.php:39
+msgid " Parking dans la propriété."
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/chambre.php:41
+msgid ""
+" La chambre dispose d’un balcon avec salon de jardin, qui donne sur le "
+"jardin paysagé à l’arrière de la maison."
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/chambre.php:43
+msgid ""
+" Elle comprend deux lits jumeaux de 2 m x 0.90 m (ou 2 m x 1,80 m), une "
+"penderie et une bibliothèque."
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/chambre.php:45
+msgid ""
+" La chambre comporte également deux fauteuils, un petit bureau, une "
+"télévision satellite."
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/chambre.php:47
+msgid " Une liaison Internet WIFI ou ethernet est à votre disposition"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/chambre.php:49
+msgid ""
+" La salle de douche privative est attenante à la chambre avec douche à "
+"l’italienne, toilettes, lavabo."
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/chambre.php:51
+msgid ""
+" Le petit déjeuner est servi dans la véranda ou dans le séjour/salle à "
+"manger de la maison."
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/index.php:33
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/index.php:39
+msgid "La chambre"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/index.php:45
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/index.php:51
+msgid "La salle de douche"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/index.php:63
+msgid "Bienvenue dans la Chambre du coté de notre jardin."
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/index.php:65
+msgid "Bienvenue dans la Chambre du côté de notre jardin "
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/index.php:66
+msgid "« Côté Jardin »"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/index.php:67
+msgid "Elle est labellisée "
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/index.php:67
+msgid " et permet d’accueillir "
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/index.php:67
+msgid "2 personnes"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/index.php:68
+msgid ""
+"Etant situés en centre ville, nous sommes à proximité immédiate de tous les "
+"principaux commerces situés à moins d’un kilomètre de la maison : "
+"restaurants, banques, gare SNCF et routière, marchés..."
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/index.php:72
+msgid "Nous avons conçu celle-ci en vue de vous offrir "
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/index.php:72
+msgid "confort et détente"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/index.php:72
+msgid " tout en étant à proximité de "
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/index.php:72
+msgid "Paris"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/index.php:72
+msgid ""
+". Vous y serez indépendant afin de vous féliciter un séjour parisien et "
+"banlieusard le plus agréable possible, ceci tout au long de l’année."
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:19
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:22
+msgid "BIENVENUE"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:33
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:36
+msgid "CHAMBRE"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:40
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:43
+msgid "GALERIE"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:47
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:50
+msgid "TARIFS"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:57
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:60
+msgid "ENVIRONS"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:64
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:67
+msgid "LOCALISATION"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:71
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:74
+msgid "CONTACT"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:79
+msgid "LANGAGE"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:83
+msgid "Français"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:84
+msgid "Anglais"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/pied.php:13
+msgid "Condition Générale"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/pied.php:59
+msgid "© 2013 Côté Jardin. Tous droits réservés. flowlight.fr"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/tarif.php:25
+msgid "Petits déjeuners"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/tarif.php:26
+msgid "inclus type français."
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/tarif.php:27
+msgid "Supplément de 4 € pour un petit déjeuner type continental."
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/tarif.php:34
+msgid "Tarifs"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/tarif.php:35
+msgid "Petit déjeuner inclus:"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/tarif.php:37
+msgid "1 personne  : "
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/tarif.php:38
+msgid "2 personnes : "
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/tarif.php:40
+msgid "Pas de taxe de séjour"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/tarif.php:46
+msgid "Politique de réservation:"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/tarif.php:47
+msgid ""
+"La réservation devient effective dès lors que le client aura fait parvenir "
+"au propriétaire le contrat signé et un acompte avant la date indiquée au "
+"verso du contrat, suivant les modalités indiquées aux conditions générales."
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/tarif.php:48
+msgid "Le solde sera versé à l’arrivée."
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/tarif.php:50
+msgid "Moyens de payement"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/tarif.php:52
+msgid " Paypal"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/tarif.php:53
+msgid " Numéraire"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/tarif.php:54
+msgid " Versement d'un accompte à la réservation"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/tarif.php:63
+msgid "Offre Spéciale"
+msgstr ""
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/tarif.php:64
+msgid "A partir de 3 nuits successives, réduction de "
+msgstr ""
