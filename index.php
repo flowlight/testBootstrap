@@ -1,5 +1,10 @@
+<?php
+define("WEBROOT","/.");
+require "localization.php"; 
+?>
+
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 
   <!-- HEAD -->
   <?php include 'head.php';?>
@@ -25,18 +30,26 @@
 				<div class="active item">
 					<img src="1.jpg" alt="">
 					<div class="carousel-caption">
-						<h4>La chambre</h4>
-						<p>Chd sfsd fsd v</p>
+						<h4><?php echo _("La chambre"); ?></h4>
 					</div>
 				</div>
 				<div class="item">
 					<img src="2.jpg" alt="">
+					<div class="carousel-caption">
+						<h4><?php echo _("La chambre"); ?></h4>
+					</div>				
 				</div>
 				<div class="item">
 					<img src="3.jpg" alt="">
+					<div class="carousel-caption">
+						<h4><?php echo _("La salle de douche"); ?></h4>
+					</div>				
 				</div>
 				<div class="item">
 					<img src="4.jpg" alt="">
+					<div class="carousel-caption">
+						<h4><?php echo _("La salle de douche"); ?></h4>
+					</div>				
 				</div>
 			</div>
 	
@@ -47,15 +60,16 @@
 				
 		<div class="hero-unit">
 			<blockquote>
-			  <h4>Bienvenue dans la Chambre du coté de notre jardin.</h4>
+			  <h4><?php echo _("Bienvenue dans la Chambre du coté de notre jardin."); ?></h4>
 			  <p>
-			    Bienvenue dans la Chambre du côté de notre jardin <strong>« Côté Jardin »</strong>.<br>
-			    Elle est labellisée <strong>Gîtes de France - City Break</strong> et permet d’accueillir <strong>2 personnes</strong>.<br>
-			    Etant situés en centre ville, nous sommes à proximité immédiate de tous les principaux commerces situés à moins d’un kilomètre de la maison : restaurants, banques, gare SNCF et routière, marchés...
+			  	<?php echo _("Bienvenue dans la Chambre du côté de notre jardin "); ?>
+			    <strong><?php echo _("« Côté Jardin »"); ?></strong>.<br>
+			    <?php echo _("Elle est labellisée "); ?><strong>Gîtes de France - City Break</strong><?php echo _(" et permet d’accueillir "); ?><strong><?php echo _("2 personnes"); ?></strong>.<br>
+			    <?php echo _("Etant situés en centre ville, nous sommes à proximité immédiate de tous les principaux commerces situés à moins d’un kilomètre de la maison : restaurants, banques, gare SNCF et routière, marchés..."); ?>
 			  <p><br>
 			
 			  <p>
-			    Nous avons conçu celle-ci en vue de vous offrir <strong>confort</strong> et <strong>détente</strong> tout en étant à proximité de <strong>Paris</strong>. Vous y serez indépendant afin de vous féliciter un séjour parisien et banlieusard le plus agréable possible, ceci tout au long de l’année.
+			  	<?php echo _("Nous avons conçu celle-ci en vue de vous offrir "); ?><strong><?php echo _("confort et détente"); ?></strong><?php echo _(" tout en étant à proximité de "); ?><strong><?php echo _("Paris"); ?></strong><?php echo _(". Vous y serez indépendant afin de vous féliciter un séjour parisien et banlieusard le plus agréable possible, ceci tout au long de l’année."); ?>			    
 			  </p>
 			</blockquote>
 		</div>

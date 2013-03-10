@@ -1,5 +1,10 @@
+<?php
+define("WEBROOT","/.");
+require "localization.php"; 
+?>
+
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 
   <!-- HEAD -->
   <?php include 'head.php';?>

@@ -10,7 +10,7 @@
             <div class="span4 text-center">
                 <ul>
                     <li><a href="#">Sitemap</a></li>
-                    <li><a href="#conditions" role="button" data-toggle="modal">Condition Générale</a></li>
+                    <li><a href="#conditions" role="button" data-toggle="modal"><?php echo _("Condition Générale"); ?></a></li>
                 </ul> 
             </div>
             <div class="span4 touch">
@@ -56,7 +56,7 @@
                 </div>
                 <div class="row copyright">
                     <div class="span12">
-                        © 2013 Côté Jardin. Tous droits réservés. flowlight.fr
+                        <?php echo _("© 2013 Côté Jardin. Tous droits réservés. flowlight.fr"); ?>
                     </div>
                 </div>
             </div>            
