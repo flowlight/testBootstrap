@@ -51,7 +51,7 @@ require "localization.php";
               <ul class="unstyled">
                 <li><img src="icon/paypal.png" width=40px><?php echo _(" Paypal"); ?> Paypal</li>
                 <li><img src="icon/euro.png" width=40px><?php echo _(" Numéraire"); ?> Numéraire</li>
-                <li><img src="icon/credit-card.png" width=40px><?php echo _(" Versement d'un accompte à la réservation"); ?></li>
+                <li><img src="icon/credit-card.png" width=40px><?php echo _(" Versement d'un acompte à la réservation"); ?></li>
               </ul>
             </blockquote>
           </div>

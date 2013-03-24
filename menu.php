@@ -10,7 +10,7 @@ function menu($active)
                 <span class="icon-bar"></span>
             </a>
             <a class="brand" href="index.php">
-                <strong style="color:#AEBA67;">Côté Jardin</strong> <small>City Break</small>
+                <strong style="color:#AEBA67;">Côté Jardin</strong> <small>&nbspCity Break</small>
             </a>
             <div class="nav-collapse collapse">
                 <ul class="nav pull-right">';
@@ -79,9 +79,32 @@ function menu($active)
                             '._("LANGAGE").'
                             <b class="caret"></b>
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu">';
+                        
+	if(isset($_SESSION['LANG']))
+	{
+		$lang = $_SESSION['LANG'];
+	}
+	else
+	{
+		$lang = "fr_FR";
+	}
+	
+	if(strcmp($lang, "en_US") == 0)
+	{
+	     echo '                   
                             <li><a href="'.$active.'.php?lang=fr_FR">'._("Français").'</a></li>
-                            <li><a href="'.$active.'.php?lang=en_US">'._("Anglais").'</a></li>
+                            <li><a href="'.$active.'.php?lang=en_US" class="active">'._("Anglais").'</a></li>';
+	}
+	else
+	{
+	     echo '                   
+                            <li><a href="'.$active.'.php?lang=fr_FR" class="active">'._("Français").'</a></li>
+                            <li><a href="'.$active.'.php?lang=en_US">'._("Anglais").'</a></li>';
+	}      
+	              
+
+     echo '
                         </ul>
                     </li>               
                 </ul>
@@ -89,5 +112,49 @@ function menu($active)
         </div>
       </div>
     </div>';
+    
+    
+    // CRUMB
+    
+    
+    switch ($active){
+	    /*case "index":
+	        echo '<li class="active">'._("BIENVENUE").'</li>';
+	    	break;*/
+	    case "chambre":
+			echo '<div class="container">';
+			echo '<ul class="breadcrumb">';
+	    	echo '<li>CITY BREAK <span class="divider">/</span></li>';
+	        echo '<li class="active"> '._("CHAMBRE").'</a> <span class="divider">/</span></li>';	  
+	    	echo '<li><a href="galerie.php">'._("GALERIE").'</a> <span class="divider">/</span></li>';
+	    	echo '<li><a href="tarif.php">'._("TARIFS").'</a></li>';
+	        echo '</ul></div>';
+	    	break;
+	    case "galerie":
+			echo '<div class="container">';
+			echo '	<ul class="breadcrumb">';
+	    	echo '<li>CITY BREAK <span class="divider">/</span></li>';
+	        echo '<li><a href="chambre.php">'._("CHAMBRE").'</a> <span class="divider">/</span></li>';	    	
+	        echo '<li class="active"> '._("GALERIE").'</a> <span class="divider">/</span></li>';	  
+	    	echo '<li><a href="tarif.php">'._("TARIFS").'</a></li>';
+	        echo '</ul></div>';
+	    	break;
+	    case "tarif":
+			echo '<div class="container">';
+			echo '	<ul class="breadcrumb">';
+	    	echo '<li>CITY BREAK <span class="divider">/</span></li>';
+	        echo '<li><a href="chambre.php">'._("CHAMBRE").'</a> <span class="divider">/</span></li>';	    	
+	        echo '<li><a href="galerie.php">'._("GALERIE").'</a> <span class="divider">/</span></li>';
+	        echo '<li class="active"> '._("TARIFS").'</a></li>';
+	        echo '</ul></div>';
+	    	break;
+	    /*case "environs":
+	        echo '<li class="active">'._("ENVIRONS").'</li>';
+	    	break;
+	    case "localisation":
+	        echo '<li class="active">'._("LOCALISATION").'</li>';
+	    	break;*/	    		    	
+    }
+
 }
 ?>

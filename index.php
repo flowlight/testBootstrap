@@ -27,29 +27,29 @@ require "localization.php";
 		
 			<!-- Carousel items -->
 			<div class="carousel-inner" style="border-radius:10px;">
-				<div class="active item">
-					<img src="1.jpg" alt="">
-					<div class="carousel-caption">
+				<div class="active item" style="border-radius:10px;">
+					<img src="1.jpg" alt="" style="border-radius:10px;">
+					<!--<div class="carousel-caption">
 						<h4><?php echo _("La chambre"); ?></h4>
-					</div>
+					</div> -->
 				</div>
-				<div class="item">
-					<img src="2.jpg" alt="">
-					<div class="carousel-caption">
+				<div class="item" style="border-radius:10px;">
+					<img src="2.jpg" alt="" style="border-radius:10px;">
+					<!--<div class="carousel-caption">
 						<h4><?php echo _("La chambre"); ?></h4>
-					</div>				
+					</div>	 -->			
 				</div>
-				<div class="item">
-					<img src="3.jpg" alt="">
-					<div class="carousel-caption">
+				<div class="item" style="border-radius:10px;">
+					<img src="3.jpg" alt="" style="border-radius:10px;">
+					<!--<div class="carousel-caption">
 						<h4><?php echo _("La salle de douche"); ?></h4>
-					</div>				
+					</div>	 -->			
 				</div>
-				<div class="item">
-					<img src="4.jpg" alt="">
-					<div class="carousel-caption">
-						<h4><?php echo _("La salle de douche"); ?></h4>
-					</div>				
+				<div class="item" style="border-radius:10px;">
+					<img src="4.jpg" alt="" style="border-radius:10px;">
+					<!--<div class="carousel-caption">
+						<h4><?php echo _("La maison"); ?></h4>
+					</div>	 -->			
 				</div>
 			</div>
 	

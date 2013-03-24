@@ -1,3 +1,8 @@
+<?php
+define("WEBROOT","/.");
+require "localization.php"; 
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -10,10 +15,28 @@
   <body>
     <div class="container">
     	<div class="page-header text-center">
-     		<a href="javascript:window.print()" class="btn"><i class="icon-print"></i>  Imprimer cette page</a>
-     		<a class="close" href="index.php" data-toggle="tooltip" data-placement="bottom" title="revenir au site">&times;</a>
+     		<a href="javascript:window.print()" class="btn"><i class="icon-print"></i>  <?php echo _("Imprimer cette page"); ?></a>
+     		<a class="close" href="index.php" data-toggle="tooltip" data-placement="bottom" title="<?php echo _("revenir au site"); ?>">&times;</a>
         </div>
-  		<?php include 'conditions_text.php'; ?>
+  		<?php 
+  			if(isset($_SESSION['LANG']))
+  			{
+	  			$lang = $_SESSION['LANG'];
+  			}
+  			else
+  			{
+	  			$lang = "fr_FR";
+  			}
+  			
+  			if(strcmp($lang, "en_US") == 0)
+  			{
+  				include 'conditions_text_en.php'; 	  			
+  			}
+  			else
+   			{
+  				include 'conditions_text.php'; 	  			
+  			} 			
+  		?>
     </div>
   </body>
 </html>

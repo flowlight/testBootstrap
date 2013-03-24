@@ -31,15 +31,48 @@ require "localization.php";
             <a class="btn btn-primary modal-next">Next <i class="icon-arrow-right icon-white"></i></a>
             <a class="btn btn-info modal-prev"><i class="icon-arrow-left icon-white"></i> Previous</a>
             <a class="btn btn-success modal-play modal-slideshow" data-slideshow="5000"><i class="icon-play icon-white"></i> Slideshow</a>
-            <a class="btn modal-download" target="_blank"><i class="icon-download"></i> Download</a>
+            <!--<a class="btn modal-download" target="_blank"><i class="icon-download"></i> Download</a>-->
         </div>
     </div>
 
     <div class="container">
       <div id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery">
-        <a href="1.jpg" title="Banana" data-gallery="gallery">Banana</a>
-        <a href="2.jpg"  title="Apple"  data-gallery="gallery">Apple</a>
-        <a href="3.jpg" title="Orange" data-gallery="gallery">Orange</a>
+      	<ul class="thumbnails">
+      	
+      		<?php
+	      		$images = array(
+	      			"chambre-5055.jpg",
+	      			"chambre-5064.jpg",
+	      			"jardin-5088.jpg",
+	      			"IMG_0181.JPG",
+	      			"IMG_0183.JPG",
+	      			"IMG_0258.JPG",
+	      			"IMG_0261.JPG",
+	      			"IMG_0274.JPG",
+	      			"IMG_0399.JPG"
+	      			);
+	      		
+	      		for($i = 0; $i < count($images); $i++)
+	      		{
+		      		echo '<li class="span4">
+		      					<a href="gal/'.$images[$i].'" data-gallery="gallery" class="thumbnail"><img src="gal/'.$images[$i].'"></a>
+		      			  </li>';
+	      		}
+      		?>
+      		
+      		<!--<li class="span4">
+		    	<a href="gal/chambre-5055.jpg" title="1" data-gallery="gallery" class="thumbnail"><img src="gal/chambre-5055.jpg"></a>
+      		</li>
+      	
+      		<li class="span4">
+		    	<a href="2.jpg" title="1" data-gallery="gallery" class="thumbnail"><img src="2.jpg"></a>
+      		</li>
+      	
+      		<li class="span4">
+		    	<a href="3.jpg" title="1" data-gallery="gallery" class="thumbnail"><img src="3.jpg"></a>
+      		</li>-->
+       	
+       	</ul>
       </div>
     </div> <!--container-->
 

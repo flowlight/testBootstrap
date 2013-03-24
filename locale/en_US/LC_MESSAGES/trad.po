@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Côté Jardin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-10 16:04+0100\n"
+"POT-Creation-Date: 2013-03-17 11:42+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: xavier VASSEUR <ma.x@free.fr>\n"
@@ -75,15 +75,92 @@ msgstr ""
 " The breakfast is served in the veranda or in the charming living room of "
 "the house."
 
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/conditions.php:1
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/conditions.php:4
+msgid "Conditions Générales"
+msgstr "Terms and conditions "
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/conditions.php:31
+msgid "Fermer"
+msgstr "Close"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/conditions.php:32
+msgid "Imprimer"
+msgstr "Print"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/conditions_print.php:18
+msgid "Imprimer cette page"
+msgstr "Print this page"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/conditions_print.php:19
+msgid "revenir au site"
+msgstr "Go back home"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/contact.php:22
+msgid ""
+"Merci de remplir ce formulaire pour réserver ou simplement nous poser une "
+"question."
+msgstr ""
+"Thank you for completing this form for a reservation or simply ask us a "
+"question."
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/contact.php:24
+msgid "Les champs en surbrillance rouges sont indispensable"
+msgstr "The red highlighted fields are required"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/contact.php:29
+msgid "Votre nom"
+msgstr "Your last name"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/contact.php:33
+msgid "Votre prénom"
+msgstr "Your first name"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/contact.php:37
+msgid "Votre adresse email"
+msgstr "Your email address"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/contact.php:41
+msgid "Votre numéro de mobile"
+msgstr "Mobile Number"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/contact.php:58
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/contact.php:64
+msgid "Arrivée"
+msgstr "Checkin date"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/contact.php:72
+msgid "Nombre de nuitées"
+msgstr "Number of nights"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/contact.php:76
+msgid "une personne"
+msgstr "one guest"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/contact.php:80
+msgid "deux personnes"
+msgstr "two guests"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/contact.php:84
+msgid "Votre message..."
+msgstr "Your message ..."
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/contact.php:87
+msgid "ENVOYER VOTRE MESSAGE"
+msgstr "SEND YOUR MESSAGE"
+
 #: /Users/flowlight/Documents/cotejardin/testBootstrap/index.php:33
 #: /Users/flowlight/Documents/cotejardin/testBootstrap/index.php:39
 msgid "La chambre"
 msgstr "The bedroom"
 
 #: /Users/flowlight/Documents/cotejardin/testBootstrap/index.php:45
-#: /Users/flowlight/Documents/cotejardin/testBootstrap/index.php:51
 msgid "La salle de douche"
 msgstr "he shower room"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/index.php:51
+msgid "La maison"
+msgstr "The house"
 
 #: /Users/flowlight/Documents/cotejardin/testBootstrap/index.php:63
 msgid "Bienvenue dans la Chambre du coté de notre jardin."
@@ -141,6 +218,90 @@ msgid ""
 msgstr ""
 ". You'll be independent for your pleasant Parisian trip all year round."
 
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/localisation.php:21
+msgid "Comment venir:"
+msgstr "Getting there:"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/localisation.php:24
+msgid "En train"
+msgstr "By train"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/localisation.php:25
+msgid "RER SNCF / RATP Sartrouville est en zone 4, et desservie "
+msgstr "Train station \"Sartrouville\" is in zone 4 and could be access by:"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/localisation.php:27
+msgid "soit par le RER A (RATP) traversant Paris"
+msgstr "RER line A through Paris"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/localisation.php:28
+msgid "soit par la gare de Paris St Lazare (SNCF)."
+msgstr "SNCF trains via Saint Lazare station"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/localisation.php:29
+msgid "Fréquence élevée en heure de pointe."
+msgstr "High frequency during peak hours."
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/localisation.php:33
+msgid "En voiture"
+msgstr "By car"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/localisation.php:35
+msgid "Autoroutes A 14, A15, A 86, D 308."
+msgstr "Highways A14, A15, A86, D308."
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/localisation.php:36
+msgid "Parking privé disponible dans la propriété."
+msgstr " Car park available."
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/localisation.php:40
+msgid "Avion : "
+msgstr "By plane"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/localisation.php:42
+msgid ""
+"Aéroport de Roissy Charles de Gaulle, 45 mn / 35 km en voiture – 1 h 15 "
+"transports en commun."
+msgstr ""
+"Airport \"Roissy Charles de Gaulle\", 45 min / 35 km by car – 1:15 by "
+"transport."
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/localisation.php:43
+msgid "Orly, 1 h / 40 km en voiture, 1 h 20 transports en commun."
+msgstr "Beauvais, 1:15 / 80 km by car, 1:30 by transports."
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/localisation.php:44
+msgid "Beauvais, 1 h 15 / 80 km en voiture, 1 h 30 transports en commun."
+msgstr "Beauvais, 1:15 / 80 km by car, 1:30 by transports."
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/localisation.php:48
+msgid "Distance par rapport à des repères connus"
+msgstr "Distance to known landmarks"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/localisation.php:50
+msgid "Sartrouville -> Paris Notre Dame = 21 km / 35 mn min par la route."
+msgstr "Sartrouville to Paris Notre Dame = 21 km / 35 mn min by car."
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/localisation.php:51
+msgid "Sartrouville -> Versailles Château = 30 km / 35 mn."
+msgstr "Sartrouville to Versailles castle = 30 km / 35 min."
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/localisation.php:52
+msgid "Sartrouville -> St Germain en Laye Château = 12 km / 17 mn."
+msgstr "Sartrouville to Saintt Germain en Laye Castle = 12 km / 17 min."
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/localisation.php:82
+msgid "Pour nous contacter"
+msgstr "To contact us"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/localisation.php:84
+msgid "Une question, une information ou bien une réservation..."
+msgstr "A question or just booking …"
+
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/localisation.php:86
+msgid "Contactez-nous !"
+msgstr "Contact us!"
+
 #: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:19
 #: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:22
 msgid "BIENVENUE"
@@ -148,16 +309,25 @@ msgstr "WELCOME"
 
 #: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:33
 #: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:36
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:128
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:137
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:146
 msgid "CHAMBRE"
 msgstr "ROOM"
 
 #: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:40
 #: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:43
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:129
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:138
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:147
 msgid "GALERIE"
 msgstr "GALLERY"
 
 #: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:47
 #: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:50
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:130
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:139
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:148
 msgid "TARIFS"
 msgstr "RATE"
 
@@ -180,11 +350,13 @@ msgstr "CONTACT"
 msgid "LANGAGE"
 msgstr "LANGUAGE"
 
-#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:83
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:96
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:102
 msgid "Français"
 msgstr "French"
 
-#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:84
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:97
+#: /Users/flowlight/Documents/cotejardin/testBootstrap/menu.php:103
 msgid "Anglais"
 msgstr "English"
 
@@ -193,8 +365,8 @@ msgid "Condition Générale"
 msgstr "Terms and conditions "
 
 #: /Users/flowlight/Documents/cotejardin/testBootstrap/pied.php:59
-msgid "© 2013 Côté Jardin. Tous droits réservés. flowlight.fr"
-msgstr "© 2013 Côté Jardin. All rights reserved. flowlight.fr"
+msgid "© 2013 Côté Jardin. Tous droits réservés."
+msgstr "© 2013 Côté Jardin. All rights reserved."
 
 #: /Users/flowlight/Documents/cotejardin/testBootstrap/tarif.php:25
 msgid "Petits déjeuners"
@@ -259,7 +431,7 @@ msgid " Numéraire"
 msgstr "Cash"
 
 #: /Users/flowlight/Documents/cotejardin/testBootstrap/tarif.php:54
-msgid " Versement d'un accompte à la réservation"
+msgid " Versement d'un acompte à la réservation"
 msgstr "Payment of a deposit at booking"
 
 #: /Users/flowlight/Documents/cotejardin/testBootstrap/tarif.php:63
@@ -268,7 +440,7 @@ msgstr "Special Offer"
 
 #: /Users/flowlight/Documents/cotejardin/testBootstrap/tarif.php:64
 msgid "A partir de 3 nuits successives, réduction de "
-msgstr "From three successive nights, reduced of"
+msgstr "From three successive nights, reduced of "
 
 #~ msgid "Coucou"
 #~ msgstr "Hello"

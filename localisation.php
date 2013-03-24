@@ -18,38 +18,38 @@ require "localization.php";
      
     <!-- LOCALISATION -->
     <div class="container">
-      <h4>Comment venir:</h4>
+      <h4><?php echo _("Comment venir:"); ?></h4>
       <div class="row-fluid">  
         <div class="span3 well">
-          <h5>En train</h5>
-          <p>RER SNCF / RATP Sartrouville est en zone 4, et desservie 
+          <h5><?php echo _("En train"); ?></h5>
+          <p><?php echo _("RER SNCF / RATP Sartrouville est en zone 4, et desservie "); ?>
           <ul>
-            <li>soit par le RER A (RATP) traversant Paris</li>
-            <li>soit par la gare de Paris St Lazare (SNCF).</li>
-            <li>Fréquence élevée en heure de pointe.</li>
+            <li><?php echo _("soit par le RER A (RATP) traversant Paris"); ?></li>
+            <li><?php echo _("soit par la gare de Paris St Lazare (SNCF)."); ?></li>
+            <li><?php echo _("Fréquence élevée en heure de pointe."); ?></li>
           </ul>
         </div>       
         <div class="span3 well">
-          <h5>En voiture</h5>
+          <h5><?php echo _("En voiture"); ?></h5>
             <ul>
-              <li>Autoroutes A 14, A15, A 86, D 308.</li>
-              <li>Parking privé disponible dans la propriété.</li>
+              <li><?php echo _("Autoroutes A 14, A15, A 86, D 308."); ?></li>
+              <li><?php echo _("Parking privé disponible dans la propriété."); ?></li>
             </ul>  
         </div>    
         <div class="span3 well">
-          <h5>Avion : </h5>
+          <h5><?php echo _("Avion : "); ?></h5>
             <ul>
-              <li>Aéroport de Roissy Charles de Gaulle, 45 mn / 35 km en voiture – 1 h 15 transports en commun.</li>
-              <li>Orly, 1 h / 40 km en voiture, 1 h 20 transports en commun.</li>
-              <li>Beauvais, 1 h 15 / 80 km en voiture, 1 h 30 transports en commun.</li>              
+              <li><?php echo _("Aéroport de Roissy Charles de Gaulle, 45 mn / 35 km en voiture – 1 h 15 transports en commun."); ?></li>
+              <li><?php echo _("Orly, 1 h / 40 km en voiture, 1 h 20 transports en commun."); ?></li>
+              <li><?php echo _("Beauvais, 1 h 15 / 80 km en voiture, 1 h 30 transports en commun."); ?></li>              
             </ul>
         </div> 
         <div class="span3 well">
-          <h4>Distance par rapport à des repères connus</h4>
+          <h4><?php echo _("Distance par rapport à des repères connus"); ?></h4>
           <ul>
-            <li>Sartrouville -> Paris Notre Dame = 21 km / 35 mn min par la route.</li>
-            <li>Sartrouville -> Versailles Château = 30 km / 35 mn.</li>
-            <li>Sartrouville -> St Germain en Laye Château = 12 km / 17 mn.</li>
+            <li><?php echo _("Sartrouville -> Paris Notre Dame = 21 km / 35 mn min par la route."); ?></li>
+            <li><?php echo _("Sartrouville -> Versailles Château = 30 km / 35 mn."); ?></li>
+            <li><?php echo _("Sartrouville -> St Germain en Laye Château = 12 km / 17 mn."); ?></li>
           </ul>
         </div>         
       </div>    
@@ -79,11 +79,11 @@ require "localization.php";
                       </ul>
 
                       <div class="head headbottom">
-                          <h6>Pour nous contacter</h6>
+                          <h6><?php echo _("Pour nous contacter"); ?></h6>
                       </div>
-                      <p>Une question, une information ou bien une réservation...</p>
+                      <p><?php echo _("Une question, une information ou bien une réservation..."); ?></p>
 
-                      <a href="contact.php" class="btn">Contactez-nous !</a>
+                      <a href="contact.php" class="btn"><?php echo _("Contactez-nous !"); ?></a>
                   </div>
               </div>
           </div>
