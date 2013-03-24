@@ -10,7 +10,7 @@ function menu($active)
                 <span class="icon-bar"></span>
             </a>
             <a class="brand" href="index.php">
-                <strong style="color:#AEBA67;">Côté Jardin</strong> <small>&nbspCity Break</small>
+                <strong style="color:#AEBA67;">Côté Jardin</strong> <small>&nbsp;City Break</small>
             </a>
             <div class="nav-collapse collapse">
                 <ul class="nav pull-right">';
