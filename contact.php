@@ -7,6 +7,14 @@ $valid = true;
 if(!empty($_POST)){
 	extract($_POST);
 	
+	if(isset($_SESSION['LANG']))
+	{
+		$lang = $_SESSION['LANG'];
+	}
+	else
+	{
+		$lang = "fr_FR";
+	}
 	
 	if(empty($nom)){
 		$valid = false;
@@ -28,17 +36,17 @@ if(!empty($_POST)){
 		$erreur = _("Vous n'avez pas rempli une adresse électronique valide");
 	}
 	
-	else if(empty($tel)){
+	/*else if(empty($tel)){
 		$valid = false;
 		$erreur = _("Vous n'avez pas rempli votre numéro de téléphone mobile");
-	}	
+	}*/
 	
 	/*else if(empty($arrivee)){
 		$valid = false;
 		$erreur = _("Vous n'avez pas rempli votre date d'arrivée");
 	}*/	
 	
-	else if(!empty($arrivee) && empty($nbnuits)){
+	/*else if(!empty($arrivee) && empty($nbnuits)){
 		$valid = false;
 		$erreur = _("Vous n'avez pas rempli le nombre de nuitées");
 	}	
@@ -46,7 +54,7 @@ if(!empty($_POST)){
 	else if(!empty($arrivee) && empty($nbPers)){
 		$valid = false;
 		$erreur = _("Vous n'avez pas rempli le nombre de personnes");
-	}
+	}*/
 
 	else if(empty($message)){
 		$valid = false;
@@ -54,18 +62,110 @@ if(!empty($_POST)){
 	}
 			
 	if($valid){
-		$to = "ma.x@free.fr";
-		$sujet = "Côté Jardin : ".$nom." à contacté le site";
-		$header = "From: contact Côté Jardin <contact@cotejardin-citybreak.fr>";
-		$header = "Reply-To: $nom <$mail>";
-
-		$message = stripslashes($message);
-		$nom = stripslashes($nom);
 		
-		if(mail($to, $sujet, $message, $header)){
+	    $site = 'http://www.cotejardin-citybreak.fr/testsite/';
+	    //$mailsite = 'contact@cotejardin-citybreak.fr';
+	    $mailsite = 'ma.x@free.fr';
+
+		$message = nl2br(htmlentities($message));
+		$nom     = stripslashes($nom);
+		$prenom  = stripslashes($prenom);
+		
+		$to = 'Contact Côté Jardin &lt;'.$mailsite.'&gt;';
+		$sujet = "Côté Jardin : ".$civilite."".$nom." a contacté le site";
+		
+		$header  = "From: contact Côté Jardin &lt;".$mailsite."&gt;\r\n";
+		$header .= "Reply-To: ".$nom." &lt;".$mail."&gt;\r\n";
+		$header .= 'Content-Type: text/html; charset="utf-8"\r\n';
+	    $header .= 'Content-Transfer-Encoding: 8bit\r\n';
+	    
+	    				
+		$msg ='
+                <html>
+                
+                <head>
+				    <title>Côté Jardin - City Break - Sartrouville - Nouveau contact</title>
+				    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+				    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+				    
+				    <!-- FONT -->
+				    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+				    
+				    <!-- BOOTSTRAP -->
+				    <link href="'.$site.'/css/bootstrap.min.css" rel="stylesheet" media="screen">
+				    <link href="'.$site.'/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+				    
+				    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+				    <!--[if lt IE 9]>
+				            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+				    <![endif]-->
+				        
+				    <!-- STYLE -->
+				    <link rel="stylesheet" type="text/css" href="'.$site.'/css/style.css" media="screen">
+								
+				    <!-- ICONS -->
+				    <link rel="stylesheet" href="'.$site.'/css/font-awesome.min.css">
+				
+				</head>
+                                
+                <body>
+                	<div class="container"> 
+                		
+		                <table class="table table-hover">
+		                	<caption>Nouveau formulaire de contact:<br></caption>
+		                	
+		                	<tbody>
+				                <tr>
+				                    <td><span class="add-on"><i class="icon-user"></i></span>  Civilité :</td>
+				                    <td>'.$civilite.'</td>
+				                </tr>       
+				                <tr>
+				                    <td><span class="add-on"><i class="icon-user"></i></span>  Nom :</td>
+				                    <td>'.$nom.'</td>
+				                </tr>             
+				                <tr>
+				                    <td><span class="add-on"><i class="icon-user"></i></span>  Langue :</td>
+				                    <td>'.$lang.'</td>
+				                </tr>
+				                <tr>
+				                    <td><span class="add-on"><i class="icon-envelope"></i></span>  eMail :</td>
+				                    <td>'.$mail.'</td>
+				                </tr>       
+				                <tr>
+				                    <td><span class="add-on"><i class="icon-phone"></i></span>  Tel :</td>
+				                    <td>'.$tel.'</td>
+				                </tr>   
+				                <tr>
+				                    <td><span class="add-on"><i class="icon-calendar"></i></span>  Date d\'arrivée :</td>
+				                    <td>'.$arrivee.'</td>
+				                </tr>    
+				                <tr>
+				                    <td><span class="add-on"><i class="icon-suitcase"></i></span>  Nombre de nuités :</td>
+				                    <td>'.$nbnuits.'</td>
+				                </tr>  
+				                <tr>
+				                    <td><span class="add-on"><i class="icon-signin"></i></span>  Nombre de personne :</td>
+				                    <td>'.$nbPers.'</td>
+				                </tr>                 
+				                <tr>
+				                    <td><span class="add-on"><i class="icon-pencil"></i></span>  Message :</td>
+				                    <td>'.$message.'</td>
+				                </tr> 
+			                </tbody>
+		                </table>  
+                
+		           </div>  
+
+                </body>
+                </html>
+                ';		
+		
+		//$succes = $mailsite." -- ".$to." -- ".$sujet." -- ".$msg." -- ".$header;
+		
+		if(mail($to, $sujet, $msg, $header)){
 			$succes = _("Merci d'avoir remplis ce formulaire, nous allons vous contacter rapidement.");
 			unset($nom);
-			unset($prenom);
+			unset($civilite);
 			unset($mail);
 			unset($tel);
 			unset($arrivee);
@@ -116,12 +216,26 @@ if(!empty($_POST)){
 					  	'.$succes.'
 					   </div>';
 	        }
+	        
+			echo ' <div class="alertVide" id="alert"></div>';
 	    ?>
 
         
   		  <div class="row-fluid">
   			<div class="span4">
   			
+  			<div class="control-group">
+  			 <label class="radio inline">
+			   <input type="radio" name="civilite" id="inlineCheckbox1" value="M."> <?php echo _("M."); ?>
+			 </label>
+			 <label class="radio inline">
+			   <input type="radio" name="civilite" id="inlineCheckbox2" value="Mme"> <?php echo _("Mme"); ?>
+			 </label>
+			 <label class="radio inline">
+			   <input type="radio" name="civilite" id="inlineCheckbox2" value="Mlle"> <?php echo _("Mlle"); ?>
+			 </label>
+  			</div>
+			   			
   			 <div class="control-group">
              	<div class="input-prepend">
                 	<span class="add-on"><i class="icon-user"></i></span>
@@ -129,12 +243,14 @@ if(!empty($_POST)){
                 </div>   
              </div>    
              
+  			 <!--
   			 <div class="control-group">                   
              <div class="input-prepend">
                 <span class="add-on"><i class="icon-user"></i></span>
                 <input type="text" id="prenom" name="prenom" placeholder="<?php echo _("Votre prénom"); ?>" value="<?php if(isset($prenom)) echo $prenom; ?>" >
              </div>    
              </div>
+             -->
    			 <div class="control-group">                   
             <div class="input-prepend">
                 <span class="add-on"><i class="icon-envelope"></i></span>
@@ -187,25 +303,27 @@ if(!empty($_POST)){
 
              <div class="input-prepend">
                 <span class="add-on"><i class="icon-suitcase"></i></span>
-                <input type="text" id="nbnuits" name="nbnuits" placeholder="<?php echo _("Nombre de nuitées"); ?>" value="<?php if(isset($nbnuits)) echo $nbnuits; ?>" >
+                <input type="number" id="nbnuits" name="nbnuits" placeholder="<?php echo _("Nombre de nuitées"); ?>" value="<?php if(isset($nbnuits)) echo $nbnuits; ?>" >
              </div>
              <label class="radio">
-                <input type="radio" name="nbPers" id="1personne" value="1personne" <?php if(isset($nbPers) && $nbPers=="1personne") echo " checked";?>>
+                <input type="radio" name="nbPers" id="1personne" value="une personne" <?php if(isset($nbPers) && $nbPers=="une personne") echo " checked";?>>
                 <?php echo _("une personne"); ?>
              </label>
              <label class="radio">
-                <input type="radio" name="nbPers" id="2personnes" value="2personnes" <?php if(isset($nbPers) && $nbPers=="2personnes") echo " checked";?>>
+                <input type="radio" name="nbPers" id="2personnes" value="deux personnes" <?php if(isset($nbPers) && $nbPers=="deux personnes") echo " checked";?>>
                 <?php echo _("deux personnes"); ?>
              </label>
-  				</div>
+             <br>
+             <div class="controls">  
+  				<button type="submit" class="btn btn-success pull-center" id="envoyer"><?php echo _("ENVOYER VOTRE MESSAGE"); ?></button>
+             </div>
+  			</div>
    			 <div class="control-group">                   
   				<div class="span8">
-  					<textarea name="message" id="message" name="message" rows="14" class="span12" placeholder="<?php echo _("Votre message..."); ?>" value="<?php if(isset($message)) echo $message; ?>" required></textarea>
+  					<textarea name="message" id="message" name="message" rows="20" class="span12" placeholder="<?php echo _("Votre message..."); ?>" value="<?php if(isset($message)) echo $message; ?>" required></textarea>
   				</div>
   				</div>
-        <div class="controls">  
-  				<button type="submit" class="btn btn-success pull-right" id="envoyer"><?php echo _("ENVOYER VOTRE MESSAGE"); ?></button>
-        </div>
+
        </fieldset>
   		</form> <!--container-->
   	</div> <!--container-->
@@ -223,23 +341,32 @@ if(!empty($_POST)){
     <script src="js/locales/bootstrap-datepicker.fr.js"></script>
     <script>
     $(function(){
+      var nowTemp = new Date();
+      var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+
       window.prettyPrint && prettyPrint();
-      $('#dp1').datepicker({
-        format: 'dd-mm-yyyy',
-        weekStart: 1,
-        todayBtn: "linked",
-        autoclose: true,
-        todayHighlight: true,
-        language: 'en'
-      });
-      $('#dp2').datepicker({
-        format: 'dd-mm-yyyy',
-        weekStart: 1,
-        todayBtn: "linked",
-        autoclose: true,
-        todayHighlight: true,
-        language: 'fr'
-      });
+      
+      $('#dp1')
+      	.datepicker({
+	        format: 'dd-MM-yyyy',
+	        weekStart: 1,
+	        todayBtn: "linked",
+	        autoclose: true,
+	        todayHighlight: true,
+	        language: 'en',
+	       	startDate: Date() 
+	      });
+      
+      $('#dp2')
+       	.datepicker({
+	        format: 'dd-MM-yyyy',
+	        weekStart: 1,
+	        todayBtn: "linked",
+	        autoclose: true,
+	        todayHighlight: true,
+	        language: 'fr',
+	        startDate: Date()
+	      });
     });
   </script>
   
@@ -249,18 +376,18 @@ if(!empty($_POST)){
 			$("#envoyer").click(function(){
 				valid = true;
 				
+				// NOM
 				if($("#nom").val()==""){
-					$("#nom").closest('.control-group').removeClass('success').addClass('error');	
+					$("#nom").closest('.control-group').removeClass('success').addClass('error');
+					//$("#alert").closest('.alertVide').removeClass('alertVide').addClass('alert alert-error');	
+					//$("#alert").closest('.alert').text("Vous n'avez pas rempli votre nom");
 					valid = false;
 				}
 				else {
 					$("#nom").closest('.control-group').removeClass('error').addClass('success');	
 				}
 				
-				if($("#prenom").val()==""){
-					$("#prenom").closest('.control-group').removeClass('error').addClass('success');	
-				}
-				
+				// MAIL
 				if($("#mail").val()==""){
 					$("#mail").closest('.control-group').removeClass('success').addClass('error');	
 					valid = false;
@@ -276,6 +403,7 @@ if(!empty($_POST)){
 					}
 				}
 				
+				// MESSAGES
 				if($("#message").val()==""){
 					$("#message").closest('.control-group').removeClass('success').addClass('error');	
 					valid = false;
@@ -283,6 +411,15 @@ if(!empty($_POST)){
 				else {
 					$("#message").closest('.control-group').removeClass('error').addClass('success');	
 				}
+				
+				// NB DE NUITS
+				/*if(!$("#nbnuits").val().match(/^[0-9]/i)){
+					$("#nbnuits").closest('.control-group').removeClass('success').addClass('error');	
+					valid = false;
+				}
+				else {
+					$("#nbnuits").closest('.control-group').removeClass('error').addClass('success');	
+				}	*/
 																
 				return valid;
 			});

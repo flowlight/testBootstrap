@@ -316,6 +316,21 @@ a {
 	color: #89a56A;
 }
 
+.datepicker table tr td.active {
+	background-image: -webkit-linear-gradient(top, #828a53 0%, #aeba67 100%);
+	background-color: #828a53;
+}
+
+.datepicker table tr td.active:hover {
+	background-image: -webkit-linear-gradient(top, #adc169 0%, #aeba67 100%);
+	background-color: #aeba67;
+}
+
+.datepicker table tr td.today {
+	background-image: -webkit-linear-gradient(top, #828a53 0%, #aeba67 100%);
+	background-color: #aeba67;
+}
+
 /* Responsive
 -------------------------------------------------- */
 
@@ -339,6 +354,10 @@ a {
 		color: #fff;
 		opacity: 0.7;
 	}
+	#message {
+		margin-top: 10px;
+		/*margin-left: 20px;*/
+	}
 }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) { 
@@ -349,7 +368,9 @@ a {
 		top: 999;
 	}
 	#message {
-		margin-left: 20px;
+		margin-left: 40px;
+		width: 95%;
+		margin-top: 0px;
 	}
 }
 /* Landscape phone to portrait tablet */

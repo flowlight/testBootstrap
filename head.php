@@ -15,9 +15,6 @@
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
         
-    <!-- STYLE -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
-
     <!-- GALLERY -->
     <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
 
@@ -26,6 +23,9 @@
 
     <!-- ICONS -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- STYLE -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
 
 </head>
 
