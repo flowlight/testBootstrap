@@ -71,13 +71,13 @@ if(!empty($_POST)){
 		$nom     = stripslashes($nom);
 		$prenom  = stripslashes($prenom);
 		
-		$to = 'Contact Côté Jardin &lt;'.$mailsite.'&gt;';
-		$sujet = "Côté Jardin : ".$civilite."".$nom." a contacté le site";
+		$to = 'Contact Côté Jardin <ma.x@free.fr>';
+		$sujet = "Côté Jardin : $civilite $nom a contacté le site";
 		
-		$header  = "From: contact Côté Jardin &lt;".$mailsite."&gt;\r\n";
-		$header .= "Reply-To: ".$nom." &lt;".$mail."&gt;\r\n";
-		$header .= 'Content-Type: text/html; charset="utf-8"\r\n';
-	    $header .= 'Content-Transfer-Encoding: 8bit\r\n';
+		$header  = "From: contact Côté Jardin <ma.x@free.fr> \r\n";
+		$header .= "Reply-To: $nom <$mail> \r\n";
+		$header .= "Content-Type: text/html; charset=\"utf-8\" \r\n";
+	    $header .= "Content-Transfer-Encoding: 8bit \r\n";
 	    
 	    				
 		$msg ='
@@ -160,10 +160,10 @@ if(!empty($_POST)){
                 </html>
                 ';		
 		
-		//$succes = $mailsite." -- ".$to." -- ".$sujet." -- ".$msg." -- ".$header;
+		$succes = $mailsite." -- ".$to." -- ".$sujet." -- ".$msg." -- ".$header;
 		
 		if(mail($to, $sujet, $msg, $header)){
-			$succes = _("Merci d'avoir remplis ce formulaire, nous allons vous contacter rapidement.");
+			$succes .= _("Merci d'avoir remplis ce formulaire, nous allons vous contacter rapidement.");
 			unset($nom);
 			unset($civilite);
 			unset($mail);
