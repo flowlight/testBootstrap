@@ -64,8 +64,8 @@ if(!empty($_POST)){
 	if($valid){
 		
 	    $site = 'http://www.cotejardin-citybreak.fr/testsite/';
-	    //$mailsite = 'contact@cotejardin-citybreak.fr';
-	    $mailsite = 'ma.x@free.fr';
+	    $mailsite = 'contact@cotejardin-citybreak.fr';
+	    //$mailsite = 'ma.x@free.fr';
 
 		$message = nl2br(htmlentities($message));
 		$nom     = stripslashes($nom);
@@ -160,7 +160,7 @@ if(!empty($_POST)){
                 </html>
                 ';		
 		
-		$succes = $mailsite." -- ".$to." -- ".$sujet." -- ".$msg." -- ".$header;
+		//$succes = $mailsite." -- ".$to." -- ".$sujet." -- ".$msg." -- ".$header;
 		
 		if(mail($to, $sujet, $msg, $header)){
 			$succes .= _("Merci d'avoir remplis ce formulaire, nous allons vous contacter rapidement.");
