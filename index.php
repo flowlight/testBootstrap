@@ -59,30 +59,23 @@ require "localization.php";
 		</div>
 				
 		<div class="hero-unit">
-			<blockquote>
-			  <h4><?php echo _("Bienvenue dans la Chambre du coté de notre jardin."); ?></h4>
-			  <p>
-			  	<?php echo _("Bienvenue dans la Chambre du côté de notre jardin "); ?>
-			    <strong><?php echo _("« Côté Jardin »"); ?></strong>.<br>
-			    <?php echo _("Elle est labellisée "); ?><strong>Gîtes de France - City Break</strong><?php echo _(" et permet d’accueillir "); ?><strong><?php echo _("2 personnes"); ?></strong>.<br>
-			    <?php echo _("Etant situés en centre ville, nous sommes à proximité immédiate de tous les principaux commerces situés à moins d’un kilomètre de la maison : restaurants, banques, gare SNCF et routière, marchés..."); ?>
-			  <p><br>
-			
-			  <p>
-			  	<?php echo _("Nous avons conçu celle-ci en vue de vous offrir "); ?><strong><?php echo _("confort et détente"); ?></strong><?php echo _(" tout en étant à proximité de "); ?><strong><?php echo _("Paris"); ?></strong><?php echo _(". Vous y serez indépendant afin de vous féliciter un séjour parisien et banlieusard le plus agréable possible, ceci tout au long de l’année."); ?>			    
-			  </p>
-			</blockquote>
-		</div>
-
-		<div class="row-fluid text-center">
-			<div class="span4">
-				<img src="chambres.gif" width=150px>							
+			<div class="row">
+			<div class="span8">
+				<blockquote>
+				  <h3><?php echo _("Bienvenue dans la Chambre d’hôtes Côté Jardin."); ?></h3>
+				  
+				  	<p><?php echo _("Maryvonne et Pierre vous accueillent dans la chambre d’hôtes « Coté Jardin » de leur pavillon de Sartrouville (deuxième ville des Yvelines), à 15 km à l’ouest de Paris, dans la tranquillité d’un quartier pavillonnaire idéalement situé en centre ville, proche de la gare ferroviaire et de tous  les commerces."); ?></p><br>
+					<p>
+				    <?php echo _("Vous voulez visiter Paris ou bien notre belle région de l’Ouest de l’Ile de France, en particulier le département des Yvelines, vous trouverez chez nous un hébergement reposant et convivial véritable alternative à un hôtel à Paris, loin des bruits et de l’animation de la ville en liaison directe et rapide avec le centre de Paris."); ?></p><br>
+					<p>
+				    <?php echo _("Vous êtes de passage pour des raisons professionnelles et vous cherchez un havre de paix après une journée de travail, la chambre Coté Jardin a été conçue pour vous recevoir dans la verdure tout en vous permettant de rester en contact avec vos collaborateurs via Internet."); ?></p>
+				  
+				</blockquote>
 			</div>
-			<div class="span4">
-				<img src="logo.png" width=150px>
+			<div class="span2 text-center">
+				<img src="chambres.gif">
+				<strong><i>Premium</i></strong>
 			</div>
-			<div class="span4">
-				<img src="gdf.png" width=150px>
 			</div>
 		</div>
     </div> <!-- Container -->

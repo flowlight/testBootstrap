@@ -1,23 +1,32 @@
 <footer id="footer">
     <div class="container">
         <div class="row info">
-            <div class="span4 residence">
+            <div class="span1 text-center">
+                <img src="logo.png">
+            </div>
+            <div class="span3 residence text-center">
                 <ul>
-                    <li>Pierre & Maryvonne Wolff.</li>
-                    <li><small>29 bis rue Hortense Foubert. Sartrouville, France</small></li>
+                    <li>Pierre &amp; Maryvonne Wolff.</li>
+                    <li><small>29 bis rue Hortense Foubert.</small></li>
+                    <li>78500 Sartrouville, France</li>
                 </ul>
             </div>
             <div class="span4 text-center">
-                <ul>
-                    <li><a href="#">Sitemap</a></li>
+            	<ul>
+                	<li><i>Côté Jardin - City Break Premium</i></li>
+                    <!--<li><a href="#"><?php echo _("Plan du site"); ?></a></li>-->
+                    <li><img src="paypal.png">Paypal <img src="wifi.png"> WIFI</li>
                     <li><a href="#conditions" role="button" data-toggle="modal"><?php echo _("Condition Générale"); ?></a></li>
-                </ul> 
+                </ul>
             </div>
-            <div class="span4 touch">
+            <div class="span3 offset1 touch">
                 <ul>
                     <li><strong>T.</strong> +33 (0)1 3968 1427</li>
+                    <li><strong>M.</strong> +33 (0)6 7633 1793</li>
                     <li><strong>E.</strong><a href="mailto:contact@cotejardin-citybreak.fr"> contact@cotejardin-citybreak.fr</a></li>
-                </ul> 
+                	<li><strong><a href="#"><?php echo _("Réserver"); ?></a></strong></li>
+                    <li><strong><a href="#"><?php echo _("Nous contacter"); ?></a></strong></li>
+                </ul>
             </div>
         </div>
         <div class="row credits">
@@ -59,7 +68,7 @@
                         <?php echo _("© 2013 Côté Jardin. Tous droits réservés."); ?>
                     </div>
                 </div>
-            </div>            
+            </div>
         </div>
     </div>
 </footer>

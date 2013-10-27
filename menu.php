@@ -10,7 +10,7 @@ function menu($active)
                 <span class="icon-bar"></span>
             </a>
             <a class="brand" href="index.php">
-                <strong style="color:#AEBA67;">Côté Jardin</strong> <small>&nbsp;City Break</small>
+                <strong style="color:#AEBA67;">Côté Jardin</strong> <small><i>&nbsp;City Break</i></small>
             </a>
             <div class="nav-collapse collapse">
                 <ul class="nav pull-right">';
@@ -25,47 +25,45 @@ function menu($active)
                     
      echo '             <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            CITY BREAK
+                            '._("HEBERGEMENT").'
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">';
      if($active == "chambre"){
-	     echo '<li><a href="chambre.php" class="active">'._("CHAMBRE").'</a></li>';
+	     echo '<li><a href="chambre.php" class="active">'._("CHAMBRE1").'</a></li>';
      }
      else{
-	     echo '<li><a href="chambre.php">'._("CHAMBRE").'</a></li>';
+	     echo '<li><a href="chambre.php">'._("CHAMBRE1").'</a></li>';
      }                   
      
      if($active == "galerie"){                       
-         echo '<li><a href="galerie.php" class="active">'._("GALERIE").'</a></li>';
+         echo '<li><a href="galerie.php" class="active">'._("CHAMBRE2").'</a></li>';
      }
      else{
-	     echo '<li><a href="galerie.php">'._("GALERIE").'</a></li>';
+	     echo '<li><a href="galerie.php">'._("CHAMBRE2").'</a></li>';
      }
      
-     if($active == "tarif"){                       
-         echo '<li><a href="tarif.php" class="active">'._("TARIFS").'</a></li>';
-     }
-     else{
-	     echo '<li><a href="tarif.php">'._("TARIFS").'</a></li>';
-     }
+     
 
      echo '
                         </ul>
                     </li>';
-     if($active == "environs"){                       
-         echo '<li><a href="environs.php" class="active">'._("ENVIRONS").'</a></li>';
-     }
-     else{
-	     echo '<li><a href="environs.php">'._("ENVIRONS").'</a></li>';
-     }     
-        
+                    
      if($active == "localisation"){                       
          echo '<li><a href="localisation.php" class="active">'._("LOCALISATION").'</a></li>';
      }
      else{
 	     echo '<li><a href="localisation.php">'._("LOCALISATION").'</a></li>';
-     }    
+     }  
+                    
+     if($active == "environs"){                       
+         echo '<li><a href="environs.php" class="active">'._("DECOUVRIR").'</a></li>';
+     }
+     else{
+	     echo '<li><a href="environs.php">'._("DECOUVRIR").'</a></li>';
+     }     
+        
+  
      
      if($active == "contact"){                       
          echo '<li><a href="contact.php" class="active">'._("CONTACT").'</a></li>';
@@ -74,12 +72,20 @@ function menu($active)
 	     echo '<li><a href="contact.php">'._("CONTACT").'</a></li>';
      }            
 
+	 if($active == "tarif"){                       
+         echo '<li><a href="tarif.php" class="active">'._("TARIFS").'</a></li>';
+     }
+     else{
+	     echo '<li><a href="tarif.php">'._("TARIFS").'</a></li>';
+     }
+
+     /*
      echo '             <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             '._("LANGAGE").'
                             <b class="caret"></b>
                         </a>
-                        <ul class="dropdown-menu">';
+                        <ul class="dropdown-menu">';*/
                         
 	if(isset($_SESSION['LANG']))
 	{
@@ -92,21 +98,25 @@ function menu($active)
 	
 	if(strcmp($lang, "en_US") == 0)
 	{
-	     echo '                   
+	     /*echo '                   
                             <li><a href="'.$active.'.php?lang=fr_FR">'._("Français").'</a></li>
-                            <li><a href="'.$active.'.php?lang=en_US" class="active">'._("Anglais").'</a></li>';
+                            <li><a href="'.$active.'.php?lang=en_US" class="active">'._("Anglais").'</a></li>';*/
+							echo '<li><a href="'.$active.'.php?lang=fr_FR"><img src="fr-flag.png"></a></li>';
 	}
 	else
 	{
-	     echo '                   
+	     /*echo '                   
                             <li><a href="'.$active.'.php?lang=fr_FR" class="active">'._("Français").'</a></li>
-                            <li><a href="'.$active.'.php?lang=en_US">'._("Anglais").'</a></li>';
+                            <li><a href="'.$active.'.php?lang=en_US">'._("Anglais").'</a></li>';*/
+							echo '<li><a href="'.$active.'.php?lang=en_US"><img src="uk-flag.png"></a></li>';
 	}      
 	              
-
+/*
      echo '
                         </ul>
-                    </li>               
+                    </li>';
+                    */
+    echo '            
                 </ul>
             </div>
         </div>
@@ -118,42 +128,23 @@ function menu($active)
     
     
     switch ($active){
-	    /*case "index":
-	        echo '<li class="active">'._("BIENVENUE").'</li>';
-	    	break;*/
+
 	    case "chambre":
 			echo '<div class="container">';
 			echo '<ul class="breadcrumb">';
-	    	echo '<li>CITY BREAK <span class="divider">/</span></li>';
-	        echo '<li class="active"> '._("CHAMBRE").'</a> <span class="divider">/</span></li>';	  
-	    	echo '<li><a href="galerie.php">'._("GALERIE").'</a> <span class="divider">/</span></li>';
-	    	echo '<li><a href="tarif.php">'._("TARIFS").'</a></li>';
+	    	echo '<li>'._("HEBERGEMENT").' <span class="divider">/</span></li>';
+	        echo '<li class="active"> '._("CHAMBRE1").'</a> <span class="divider">/</span></li>';	  
+	    	echo '<li><a href="galerie.php">'._("CHAMBRE2").'</a></li>';
 	        echo '</ul></div>';
 	    	break;
 	    case "galerie":
 			echo '<div class="container">';
 			echo '	<ul class="breadcrumb">';
-	    	echo '<li>CITY BREAK <span class="divider">/</span></li>';
-	        echo '<li><a href="chambre.php">'._("CHAMBRE").'</a> <span class="divider">/</span></li>';	    	
-	        echo '<li class="active"> '._("GALERIE").'</a> <span class="divider">/</span></li>';	  
-	    	echo '<li><a href="tarif.php">'._("TARIFS").'</a></li>';
+	    	echo '<li>'._("HEBERGEMENT").' <span class="divider">/</span></li>';
+	        echo '<li><a href="chambre.php">'._("CHAMBRE1").'</a> <span class="divider">/</span></li>';	    	
+	        echo '<li class="active"> '._("CHAMBRE2").'</a></li>';	  
 	        echo '</ul></div>';
-	    	break;
-	    case "tarif":
-			echo '<div class="container">';
-			echo '	<ul class="breadcrumb">';
-	    	echo '<li>CITY BREAK <span class="divider">/</span></li>';
-	        echo '<li><a href="chambre.php">'._("CHAMBRE").'</a> <span class="divider">/</span></li>';	    	
-	        echo '<li><a href="galerie.php">'._("GALERIE").'</a> <span class="divider">/</span></li>';
-	        echo '<li class="active"> '._("TARIFS").'</a></li>';
-	        echo '</ul></div>';
-	    	break;
-	    /*case "environs":
-	        echo '<li class="active">'._("ENVIRONS").'</li>';
-	    	break;
-	    case "localisation":
-	        echo '<li class="active">'._("LOCALISATION").'</li>';
-	    	break;*/	    		    	
+	    	break;    		    	
     }
 
 }
