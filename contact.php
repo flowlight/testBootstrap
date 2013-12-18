@@ -323,7 +323,7 @@ if(!empty($_POST)){
              
              <label class="radio">
                 <input type="radio" name="nbPers" id="enfant" value="enfant" <?php if(isset($nbPers) && $nbPers=="enfant") echo " checked";?>>
-                <?php echo _("un enfant (<10 ans)"); ?>
+                <?php echo _("un enfant (<10 ans"); ?>
              </label>
              
              <br>

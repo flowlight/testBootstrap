@@ -1,4 +1,18 @@
 <?
+$case_option = true;
+
+function appliquer_case($chaine)
+{
+	global $case_option;
+	if($case_option){
+		return strtoupper($chaine);
+	}
+	else{
+		return $chaine;
+	}
+}
+
+
 function menu($active)
 {
 	echo'<div class="navbar navbar-inverse navbar-static-top">
@@ -16,31 +30,31 @@ function menu($active)
                 <ul class="nav pull-right">';
                 
      if($active == "index"){
-	     echo '<li><a href="index.php" class="active">'._("BIENVENUE").'</a></li>';
+	     echo '<li><a href="index.php" class="active">'.appliquer_case(_("Bienvenue")).'</a></li>';
      }
      else{
-	     echo '<li><a href="index.php">'._("BIENVENUE").'</a></li>';
+	     echo '<li><a href="index.php">'.appliquer_case(_("Bienvenue")).'</a></li>';
      }
      
                     
      echo '             <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            '._("HEBERGEMENT").'
+                            '.appliquer_case(_("La Chambre")).'
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">';
      if($active == "chambre"){
-	     echo '<li><a href="chambre.php" class="active">'._("CHAMBRE1").'</a></li>';
+	     echo '<li><a href="chambre.php" class="active">'.appliquer_case(_("La Chambre 1")).'</a></li>';
      }
      else{
-	     echo '<li><a href="chambre.php">'._("CHAMBRE1").'</a></li>';
+	     echo '<li><a href="chambre.php">'.appliquer_case(_("La Chambre 1")).'</a></li>';
      }                   
      
      if($active == "galerie"){                       
-         echo '<li><a href="galerie.php" class="active">'._("CHAMBRE2").'</a></li>';
+         echo '<li><a href="galerie.php" class="active">'.appliquer_case(_("La Chambre 2")).'</a></li>';
      }
      else{
-	     echo '<li><a href="galerie.php">'._("CHAMBRE2").'</a></li>';
+	     echo '<li><a href="galerie.php">'.appliquer_case(_("La Chambre 2")).'</a></li>';
      }
      
      
@@ -50,39 +64,39 @@ function menu($active)
                     </li>';
                     
      if($active == "localisation"){                       
-         echo '<li><a href="localisation.php" class="active">'._("LOCALISATION").'</a></li>';
+         echo '<li><a href="localisation.php" class="active">'.appliquer_case(_("Localisation")).'</a></li>';
      }
      else{
-	     echo '<li><a href="localisation.php">'._("LOCALISATION").'</a></li>';
+	     echo '<li><a href="localisation.php">'.appliquer_case(_("Localisation")).'</a></li>';
      }  
                     
      if($active == "environs"){                       
-         echo '<li><a href="environs.php" class="active">'._("DECOUVRIR").'</a></li>';
+         echo '<li><a href="environs.php" class="active">'.appliquer_case(_("Découvrir")).'</a></li>';
      }
      else{
-	     echo '<li><a href="environs.php">'._("DECOUVRIR").'</a></li>';
+	     echo '<li><a href="environs.php">'.appliquer_case(_("Découvrir")).'</a></li>';
      }     
         
   
      
      if($active == "contact"){                       
-         echo '<li><a href="contact.php" class="active">'._("CONTACT").'</a></li>';
+         echo '<li><a href="contact.php" class="active">'.appliquer_case(_("Contact")).'</a></li>';
      }
      else{
-	     echo '<li><a href="contact.php">'._("CONTACT").'</a></li>';
+	     echo '<li><a href="contact.php">'.appliquer_case(_("Contact")).'</a></li>';
      }            
 
 	 if($active == "tarif"){                       
-         echo '<li><a href="tarif.php" class="active">'._("TARIFS").'</a></li>';
+         echo '<li><a href="tarif.php" class="active">'.appliquer_case(_("Tarifs")).'</a></li>';
      }
      else{
-	     echo '<li><a href="tarif.php">'._("TARIFS").'</a></li>';
+	     echo '<li><a href="tarif.php">'.appliquer_case(_("Tarifs")).'</a></li>';
      }
 
      /*
      echo '             <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            '._("LANGAGE").'
+                            '.appliquer_case(_("LANGAGE")).'
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">';*/
@@ -99,15 +113,15 @@ function menu($active)
 	if(strcmp($lang, "en_US") == 0)
 	{
 	     /*echo '                   
-                            <li><a href="'.$active.'.php?lang=fr_FR">'._("Français").'</a></li>
-                            <li><a href="'.$active.'.php?lang=en_US" class="active">'._("Anglais").'</a></li>';*/
+                            <li><a href="'.$active.'.php?lang=fr_FR">'.appliquer_case(_("Français")).'</a></li>
+                            <li><a href="'.$active.'.php?lang=en_US" class="active">'.appliquer_case(_("Anglais")).'</a></li>';*/
 							echo '<li><a href="'.$active.'.php?lang=fr_FR"><img src="fr-flag.png"></a></li>';
 	}
 	else
 	{
 	     /*echo '                   
-                            <li><a href="'.$active.'.php?lang=fr_FR" class="active">'._("Français").'</a></li>
-                            <li><a href="'.$active.'.php?lang=en_US">'._("Anglais").'</a></li>';*/
+                            <li><a href="'.$active.'.php?lang=fr_FR" class="active">'.appliquer_case(_("Français")).'</a></li>
+                            <li><a href="'.$active.'.php?lang=en_US">'.appliquer_case(_("Anglais")).'</a></li>';*/
 							echo '<li><a href="'.$active.'.php?lang=en_US"><img src="uk-flag.png"></a></li>';
 	}      
 	              
@@ -132,17 +146,17 @@ function menu($active)
 	    case "chambre":
 			echo '<div class="container">';
 			echo '<ul class="breadcrumb">';
-	    	echo '<li>'._("HEBERGEMENT").' <span class="divider">/</span></li>';
-	        echo '<li class="active"> '._("CHAMBRE1").'</a> <span class="divider">/</span></li>';	  
-	    	echo '<li><a href="galerie.php">'._("CHAMBRE2").'</a></li>';
+	    	echo '<li>'.appliquer_case(_("La Chambre")).' <span class="divider">/</span></li>';
+	        echo '<li class="active"> '.appliquer_case(_("La Chambre 1")).'</a> <span class="divider">/</span></li>';	  
+	    	echo '<li><a href="galerie.php">'.appliquer_case(_("La Chambre 2")).'</a></li>';
 	        echo '</ul></div>';
 	    	break;
 	    case "galerie":
 			echo '<div class="container">';
 			echo '	<ul class="breadcrumb">';
-	    	echo '<li>'._("HEBERGEMENT").' <span class="divider">/</span></li>';
-	        echo '<li><a href="chambre.php">'._("CHAMBRE1").'</a> <span class="divider">/</span></li>';	    	
-	        echo '<li class="active"> '._("CHAMBRE2").'</a></li>';	  
+	    	echo '<li>'.appliquer_case(_("La Chambre")).' <span class="divider">/</span></li>';
+	        echo '<li><a href="chambre.php">'.appliquer_case(_("La Chambre 1")).'</a> <span class="divider">/</span></li>';	    	
+	        echo '<li class="active"> '.appliquer_case(_("La Chambre 2")).'</a></li>';	  
 	        echo '</ul></div>';
 	    	break;    		    	
     }
