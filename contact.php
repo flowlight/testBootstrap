@@ -197,7 +197,7 @@ if(!empty($_POST)){
   		<form class="well" method="post" action="contact.php">
        <fieldset>
         <legend>
-            <p><?php echo _("Merci de remplir ce formulaire pour réserver ou simplement nous poser une question."); ?></p>
+            <p><?php echo _("Merci de remplir ce formulaire pour réserver un séjour ou simplement nous poser une question."); ?></p>
         </legend>
         <p><small><i><?php echo _("Les champs en surbrillance rouges sont indispensable"); ?></i></small></p>
         
@@ -236,7 +236,7 @@ if(!empty($_POST)){
 			 </label>
   			</div>
 			   			
-  			 <div class="control-group">
+  			 <div class="control-group error">
              	<div class="input-prepend">
                 	<span class="add-on"><i class="icon-user"></i></span>
                 	<input type="text" id="nom" name="nom" placeholder="<?php echo _("Votre nom"); ?>" value="<?php if(isset($nom)) echo $nom; ?>" required>
@@ -251,7 +251,7 @@ if(!empty($_POST)){
              </div>    
              </div>
              -->
-   			 <div class="control-group">                   
+   			 <div class="control-group error">                   
             <div class="input-prepend">
                 <span class="add-on"><i class="icon-envelope"></i></span>
                 <input type="email" id="mail" name="mail" placeholder="<?php echo _("Votre adresse email"); ?>" value="<?php if(isset($mail)) echo $mail; ?>" required>
@@ -305,14 +305,27 @@ if(!empty($_POST)){
                 <span class="add-on"><i class="icon-suitcase"></i></span>
                 <input type="number" id="nbnuits" name="nbnuits" placeholder="<?php echo _("Nombre de nuitées"); ?>" value="<?php if(isset($nbnuits)) echo $nbnuits; ?>" >
              </div>
+             
              <label class="radio">
                 <input type="radio" name="nbPers" id="1personne" value="une personne" <?php if(isset($nbPers) && $nbPers=="une personne") echo " checked";?>>
                 <?php echo _("une personne"); ?>
              </label>
+             
              <label class="radio">
                 <input type="radio" name="nbPers" id="2personnes" value="deux personnes" <?php if(isset($nbPers) && $nbPers=="deux personnes") echo " checked";?>>
                 <?php echo _("deux personnes"); ?>
              </label>
+             
+             <label class="radio">
+                <input type="radio" name="nbPers" id="bébé" value="bébé" <?php if(isset($nbPers) && $nbPers=="bébé") echo " checked";?>>
+                <?php echo _("un bébé (<2 ans>"); ?>
+             </label>
+             
+             <label class="radio">
+                <input type="radio" name="nbPers" id="enfant" value="enfant" <?php if(isset($nbPers) && $nbPers=="enfant") echo " checked";?>>
+                <?php echo _("un enfant (<10 ans)"); ?>
+             </label>
+             
              <br>
              <div class="controls">  
   				<button type="submit" class="btn btn-success pull-center" id="envoyer"><?php echo _("ENVOYER VOTRE MESSAGE"); ?></button>
