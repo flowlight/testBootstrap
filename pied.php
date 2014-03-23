@@ -67,7 +67,7 @@
                 </div>
                 <div class="row copyright">
                     <div class="span12">
-                        <?php echo _("© 2013 Côté Jardin. Tous droits réservés."); ?>
+                        <?php echo _("© 2014 Côté Jardin. Tous droits réservés."); ?>
                     </div>
                 </div>
             </div>

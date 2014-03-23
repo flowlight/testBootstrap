@@ -21,7 +21,6 @@ if(!empty($_POST)){
 		$erreur = _("Vous n'avez pas rempli votre nom");
 	}
 	
-	/*else if(empty($prenom)){
 		$valid = false;
 		$erreur = _("Vous n'avez pas rempli votre prénom");
 	}*/

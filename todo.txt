@@ -1,0 +1,15 @@
+
+
+- date picker lier au calendrier Gite de france
+- Paypal
+# Gallerie de photo Php
+- Carte d'acces
+# Tranduction UK/FR
+- Style M&P
+- Envoyer a un amis
+- referencement
+- livre d'or
+- verification portabilité mobile devices
+- portage vers bootstrap v3
+- presentation des chambre
+- video
