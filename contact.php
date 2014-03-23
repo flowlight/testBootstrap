@@ -21,10 +21,6 @@ if(!empty($_POST)){
 		$erreur = _("Vous n'avez pas rempli votre nom");
 	}
 	
-		$valid = false;
-		$erreur = _("Vous n'avez pas rempli votre prénom");
-	}*/
-	
 	else if(empty($mail)){
 		$valid = false;
 		$erreur = _("Vous n'avez pas rempli votre adresse électronique");
@@ -34,26 +30,6 @@ if(!empty($_POST)){
 		$valid = false;
 		$erreur = _("Vous n'avez pas rempli une adresse électronique valide");
 	}
-	
-	/*else if(empty($tel)){
-		$valid = false;
-		$erreur = _("Vous n'avez pas rempli votre numéro de téléphone mobile");
-	}*/
-	
-	/*else if(empty($arrivee)){
-		$valid = false;
-		$erreur = _("Vous n'avez pas rempli votre date d'arrivée");
-	}*/	
-	
-	/*else if(!empty($arrivee) && empty($nbnuits)){
-		$valid = false;
-		$erreur = _("Vous n'avez pas rempli le nombre de nuitées");
-	}	
-	
-	else if(!empty($arrivee) && empty($nbPers)){
-		$valid = false;
-		$erreur = _("Vous n'avez pas rempli le nombre de personnes");
-	}*/
 
 	else if(empty($message)){
 		$valid = false;
