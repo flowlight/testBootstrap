@@ -6,9 +6,11 @@
             </div>
             <div class="span3 residence text-center">
                 <ul>
-                    <li>Pierre &amp; Maryvonne Wolff.</li>
-                    <li><small>29 bis rue Hortense Foubert.</small></li>
-                    <li>78500 Sartrouville, France</li>
+	                <a href="mailto:contact@cotejardin-citybreak.fr">
+    	                <li>Pierre &amp; Maryvonne Wolff.</li>
+						<li><small>29 bis rue Hortense Foubert.</small></li>
+						<li>78500 Sartrouville, France</li>
+	                </a>
                 </ul>
             </div>
             <div class="span4 text-center">
@@ -19,22 +21,21 @@
                     <li><a href="#conditions" role="button" data-toggle="modal"><?php echo _("Condition Générale"); ?></a></li>
                 </ul>
             </div>
-            <div class="span3 offset1 touch">
+            <div class="span2 touch">
                 <ul>
-                    <li><strong>T.</strong> +33 (0)1 3968 1427</li>
+                    <!--<li><strong>T.</strong> +33 (0)1 3968 1427</li>
                     <li><strong>M.</strong> +33 (0)6 7633 1793</li>
-                    <li><strong>E.</strong><a href="mailto:contact@cotejardin-citybreak.fr"> contact@cotejardin-citybreak.fr</a></li>
-                	<li><strong><a href="reserver.php"><?php echo _("Réserver"); ?></a></strong></li>
-                    <li><strong><a href="contact.php"><?php echo _("Nous contacter"); ?></a></strong></li>
-                    <!-- <li><strong><a href="#envoyerAmi" role="button" data-toggle="modal"><?php echo _("Envoyer à un ami"); ?></a></strong></li> -->
+                    <li><strong>E.</strong><a href="mailto:contact@cotejardin-citybreak.fr">contact@cotejardin-citybreak.fr</a></li>  -->              	                 
                     <li><strong><a href="contact2.php"><?php echo _("Envoyer à un ami"); ?></a></strong></li>
-                    <li><strong><a href="#"><?php echo _("Le livre d'Or"); ?></a></strong></li>
+                    <li><strong><a href="contact.php"><?php echo _("Réserver"); ?></a></strong></li>
+                    <li><strong><a href="contact.php"><?php echo _("Contact"); ?></a></strong></li>
+                    <!--<li><strong><a href="#"><?php echo _("Le livre d'Or"); ?></a></strong></li>-->
                 </ul>
             </div>
         </div>
         <div class="row credits">
             <div class="span12">
-                <div class="row social">
+                <!--<div class="row social">
                     <div class="span12">
                         <a href="#" class="facebook">
                             <span class="socialicons ico1"></span>
@@ -65,7 +66,7 @@
                             <span class="socialicons_h ico7h"></span>
                         </a>
                     </div>
-                </div>
+                </div>-->
                 <div class="row copyright">
                     <div class="span12">
                         <?php echo _("© 2014 Côté Jardin. Tous droits réservés."); ?>

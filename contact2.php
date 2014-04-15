@@ -89,8 +89,9 @@ if(!empty($_POST)){
                                 
                 <body>
                 	<div class="container">  
-                		<img src="'.$site.'/logo.png">              	
-		                <p>'.$message.'</p>                
+                		<p><img src="'.$site.'/logo.png"></p>              	
+		                <p>'.$message.'</p>   
+		                <p>'.$nom.'</p>             
 		           </div>  
 
                 </body>
@@ -109,7 +110,7 @@ if(!empty($_POST)){
 		}
 		else
 		{
-			$erreur = _("Erreur de traitement, votre mail de contact n'a pas pu être envoyé.");
+			$erreur = _("Erreur de traitement, votre message n'a pas pu être envoyé.");
 		}
 	}
 }

@@ -62,7 +62,7 @@ require "localization.php";
 
         <div class="supplements">
             <div class="row-fluid supplement">
-                <div class="span4 offset4">
+                <div class="span10 offset1">
                     <h3>Prix des coupons Mobilis</h3>
 
                     <table class="table table-hover table-condensed">

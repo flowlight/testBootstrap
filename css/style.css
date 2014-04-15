@@ -20,7 +20,7 @@ body {
 /* Footer
 -------------------------------------------------- */
 #footer {
-  min-height: 260px;
+  min-height: 300px;
   background-color: #252528;
   color: #fff;
   padding-top: 15px;
@@ -238,7 +238,7 @@ padding: 10px 0px 60px 0px;
   text-transform: uppercase;
   color: #fff;
   font-size: 15px;
-  background: #187CCC;
+  background: #89a56A;;
   text-shadow: none;
   padding: 6px 0 6px;
   font-weight: bold;

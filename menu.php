@@ -159,6 +159,33 @@ function menu($active)
 	        echo '<li class="active"> '.appliquer_case(_("La Chambre 2")).'</a></li>';	  
 	        echo '</ul></div>';
 	    	break;    		    	
+	    
+	    case "contact":
+			echo '<div class="container">';
+			echo '<ul class="breadcrumb">';
+	        echo '<li class="active"> '.appliquer_case(_("Nous contacter")).'</a> <span class="divider">/</span></li>';	  
+	    	echo '<li><a href="contact2.php">'.appliquer_case(_("Envoyer à un ami")).'</a></li>';
+	    	echo '<li><a href="reserver.php">'.appliquer_case(_("Réserver")).'</a></li>';
+	        echo '</ul></div>';
+	    	break;
+	    case "contact":
+			echo '<div class="container">';
+			echo '<ul class="breadcrumb">';
+	        echo '<li class="active"> '.appliquer_case(_("Nous contacter")).'</a> <span class="divider">/</span></li>';	  
+	    	echo '<li><a href="contact2.php">'.appliquer_case(_("Envoyer à un ami")).'</a></li>';
+	    	echo '<li><a href="reserver.php">'.appliquer_case(_("Réserver")).'</a></li>';
+	        echo '</ul></div>';
+	    	break;
+	    case "contact":
+			echo '<div class="container">';
+			echo '<ul class="breadcrumb">';
+	        echo '<li class="active"> '.appliquer_case(_("Nous contacter")).'</a> <span class="divider">/</span></li>';	  
+	    	echo '<li><a href="contact2.php">'.appliquer_case(_("Envoyer à un ami")).'</a></li>';
+	    	echo '<li><a href="reserver.php">'.appliquer_case(_("Réserver")).'</a></li>';
+	        echo '</ul></div>';
+	    	break;
+
+
     }
 
 }
