@@ -39,8 +39,8 @@ define("WEBROOT","/."); require "localization.php"; ?>
 
                 <div class="span4 tarif promo">
                     <div class="wrapper">
-                        <img class="ribbon" src="img/2013.png">
-
+                        <!-- <img class="ribbon" src="img/2013.png"> -->
+ 
                         <h3><?php echo _("Offre Spéciale"); ?></h3>
 
                         <div class="price">

@@ -5,7 +5,7 @@ function appliquer_case($chaine)
 {
 	global $case_option;
 	if($case_option){
-		return strtoupper($chaine);
+		return mb_strtoupper($chaine, 'UTF-8');
 	}
 	else{
 		return $chaine;

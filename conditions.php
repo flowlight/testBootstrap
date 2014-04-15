@@ -109,6 +109,10 @@ if (isset($_POST['envoye']))
         /* En-têtes de l'e-mail */
         $headers = 'From: '.$nom.' <'.$expediteur.'>'."\r\n\r\n";
  
+		/* Pour le debug uniquement */
+		echo '<p>MESSAGE:<br>'.$msg.'</p>';
+		echo '<p>HEADER:<br>'.$headers.'</p>';
+ 
         /* Envoi de l'e-mail */
         if (mail($to, $sujet, $msg, $headers))
         {
@@ -197,13 +201,13 @@ if (isset($_POST['envoye']))
 	    <p>
 	        <label for="sujet">Sujet :</label>
 	        <input type="text" id="sujet" name="sujet" 
-	        	value="<?php echo (isset($_POST['sujet'])) ? $sujet : '' ?>"
+	        	value="<?php echo (isset($_POST['sujet'])) ? $sujet : "Chambre d'hôte Cote Jardin" ?>"
 	        />
 	    </p>
-	    <p>
+	    <p>s
 	        <label for="message">Message :</label>
 	        <textarea id="message" name="message" cols="40" rows="4">
-				<?php echo (isset($_POST['message'])) ? $message : '' ?>
+				<?php echo (isset($_POST['message'])) ? $message : 'Votre message...' ?>
 	        </textarea>
 	    </p>
 	    <p>

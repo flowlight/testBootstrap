@@ -41,7 +41,7 @@ require "localization.php";
 							<div class="span9">
 								<p><?php echo _("Riche de son passé historique, fluvial et viticole, elle se développe avec de nombreux projets architecturaux et des équipements sportifs. Son église St Martin a fêté son millénaire en 2009.") ?></p>
 								<p><?php echo _("Notre ville se situe à proximité de nombreux sites touristiques tels que Versailles, St Germain en Laye, Maisons Laffitte, Rueil Malmaison, tant chargés d’histoire, ainsi que des sites d’activité tels que Poissy, Cergy Pontoise et le quartier d’affaires international de La Défense.") ?></p>
-								<i><?php echo _("Pour en savoir plus : <a href="http://www.sartrouville.fr" target="_blank">www.sartrouville.fr</a></i>
+								<i><?php echo _("Pour en savoir plus : ") ?><a href="http://www.sartrouville.fr" target="_blank">www.sartrouville.fr</a></i>
 							</div>
 							<div class="span3">
 								<p><img src="img/saint-martin.jpg" alt="Mairie de Sartrouville" class="img-rounded"></p>

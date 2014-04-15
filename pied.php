@@ -26,7 +26,8 @@
                     <li><strong>E.</strong><a href="mailto:contact@cotejardin-citybreak.fr"> contact@cotejardin-citybreak.fr</a></li>
                 	<li><strong><a href="reserver.php"><?php echo _("Réserver"); ?></a></strong></li>
                     <li><strong><a href="contact.php"><?php echo _("Nous contacter"); ?></a></strong></li>
-                    <li><strong><a href="#envoyerAmi" role="button" data-toggle="modal"><?php echo _("Envoyer à un ami"); ?></a></strong></li>
+                    <!-- <li><strong><a href="#envoyerAmi" role="button" data-toggle="modal"><?php echo _("Envoyer à un ami"); ?></a></strong></li> -->
+                    <li><strong><a href="contact2.php"><?php echo _("Envoyer à un ami"); ?></a></strong></li>
                     <li><strong><a href="#"><?php echo _("Le livre d'Or"); ?></a></strong></li>
                 </ul>
             </div>
