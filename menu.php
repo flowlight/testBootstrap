@@ -160,7 +160,7 @@ function menu($active)
 	        echo '</ul></div>';
 	    	break;    		    	
 	    
-	    case "contact":
+	    /*case "contact":
 			echo '<div class="container">';
 			echo '<ul class="breadcrumb">';
 	        echo '<li class="active"> '.appliquer_case(_("Nous contacter")).'</a> <span class="divider">/</span></li>';	  
@@ -185,7 +185,7 @@ function menu($active)
 	        echo '</ul></div>';
 	    	break;
 
-
+*/
     }
 
 }
