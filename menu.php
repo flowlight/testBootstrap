@@ -37,31 +37,31 @@ function menu($active)
      }
      
                     
+     /*  Menu dropdown chambre....
      echo '             <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             '.appliquer_case(_("La Chambre")).'
                             <b class="caret"></b>
                         </a>
-                        <ul class="dropdown-menu">';
+                        <ul class="dropdown-menu">';*/
      if($active == "chambre"){
-	     echo '<li><a href="chambre.php" class="active">'.appliquer_case(_("La Chambre 1")).'</a></li>';
+	     echo '<li><a href="chambre.php" class="active">'.appliquer_case(_("La Chambre")).'</a></li>';
      }
      else{
-	     echo '<li><a href="chambre.php">'.appliquer_case(_("La Chambre 1")).'</a></li>';
+	     echo '<li><a href="chambre.php">'.appliquer_case(_("La Chambre")).'</a></li>';
      }                   
      
-     if($active == "galerie"){                       
+     /*if($active == "galerie"){                       
          echo '<li><a href="galerie.php" class="active">'.appliquer_case(_("La Chambre 2")).'</a></li>';
      }
      else{
 	     echo '<li><a href="galerie.php">'.appliquer_case(_("La Chambre 2")).'</a></li>';
-     }
-     
-     
+     } 
 
      echo '
                         </ul>
                     </li>';
+     */
                     
      if($active == "localisation"){                       
          echo '<li><a href="localisation.php" class="active">'.appliquer_case(_("Localisation")).'</a></li>';
@@ -139,7 +139,7 @@ function menu($active)
     
     
     // CRUMB
-    
+    /*
     
     switch ($active){
 
@@ -160,7 +160,7 @@ function menu($active)
 	        echo '</ul></div>';
 	    	break;    		    	
 	    
-	    /*case "contact":
+	    case "contact":
 			echo '<div class="container">';
 			echo '<ul class="breadcrumb">';
 	        echo '<li class="active"> '.appliquer_case(_("Nous contacter")).'</a> <span class="divider">/</span></li>';	  
@@ -185,8 +185,8 @@ function menu($active)
 	        echo '</ul></div>';
 	    	break;
 
-*/
-    }
+
+    }*/
 
 }
 ?>

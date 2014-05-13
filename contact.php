@@ -169,11 +169,19 @@ if(!empty($_POST)){
     ?>
 
     <div class="container">
+    	
+    	<div class=="row">
+		  <div class="head">
+		  	<h3>
+		  		<div class="souligne">
+		  			<?php echo _("Merci de remplir ce formulaire pour réserver un séjour ou simplement nous poser une question."); ?>
+		  		</div>
+		  	</h3>
+		  </div>
+		</div>
+    
   		<form class="well" method="post" action="contact.php">
        <fieldset>
-        <legend>
-            <p><?php echo _("Merci de remplir ce formulaire pour réserver un séjour ou simplement nous poser une question."); ?></p>
-        </legend>
         <p><small><i><?php echo _("Les champs en surbrillance rouges sont indispensable"); ?></i></small></p>
         
         <?php 

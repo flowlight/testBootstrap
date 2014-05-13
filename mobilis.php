@@ -82,25 +82,25 @@ require "localization.php";
                             <tr>
                                 <td>1 à 2</td>
 
-                                <td>6,60€</td>
+                                <td>6,80€</td>
                             </tr>
 
                             <tr>
                                 <td>1 à 3</td>
 
-                                <td>8,80€</td>
+                                <td>9,05€</td>
                             </tr>
 
                             <tr>
                                 <td>1 à 4 (Sartrouville)</td>
 
-                                <td>10,85€</td>
+                                <td>11,20€</td>
                             </tr>
 
                             <tr>
                                 <td>1 à 5</td>
 
-                                <td>15,65€</td>
+                                <td>16,10€</td>
                             </tr>
                         </tbody>
                     </table>

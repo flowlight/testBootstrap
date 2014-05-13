@@ -34,6 +34,9 @@
     <!-- STYLE -->
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
 
+	<!-- FLEXSLIDER -->
+	<link rel="stylesheet" href="flexslider.css" type="text/css">
+	
 </head>
 
   <!-- MENU -->

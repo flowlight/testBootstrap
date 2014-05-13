@@ -53,7 +53,7 @@ require "localization.php";
                 <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=29+bis+rue+hortense+foubert,+sartrouville&amp;aq=&amp;sll=48.680793,2.502588&amp;sspn=2.556957,5.377808&amp;ie=UTF8&amp;hq=&amp;hnear=29+bis+Avenue+Hortense+Foubert,+78500+Sartrouville,+Yvelines,+%C3%8Ele-de-France&amp;t=m&amp;z=14&amp;iwloc=A&amp;ll=48.938853,2.16296&amp;output=embed">
                 </iframe>
                 -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83958.41738334892!2d2.2633150931365233!3d48.882984957759376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6615f055aa22b%3A0x53b39d03188696d0!2sSartrouville!5e0!3m2!1sfr!2sfr!4v1387317790029" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83958.41738334892!2d2.2633150931365233!3d48.882984957759376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6615f055aa22b%3A0x53b39d03188696d0!2sSartrouville!5e0!3m2!1sfr!2sfr!4v1387317790029" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" scrollwheel="false"></iframe>
         </div>
     </div><!-- MAP -->
     <!-- LOCALISATION -->
